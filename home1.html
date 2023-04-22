@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<title>Home Page</title>
+<style>
+    body{
+        background-image:url(home.png);
+        background-size: cover;
+        
+    }
+    .button {
+        background-color: #fffbdf;
+        color: #b3631d;
+        border: 4px solid #af2b2b;
+        padding: 15px 40px;
+        text-align: center;
+        border-radius: 12px;
+        display: inline-block;
+        font-size: 20px;
+      }
+    .button1{
+        position: absolute;
+        margin-left: 80px;
+        bottom:   650px;
+    }
+    
+    .button2{
+        position: absolute;
+        right: 100px;
+        bottom: 650px;
+    }
+    .button:hover {
+        background-color: rgb(166, 85, 241);
+        color: white;
+      }
+</style>
+
+<body>
+    
+    <button class="button button1" onclick="window.location.href = 'login.html';">Login</button>
+    <button class="button button2" onclick="window.location.href = 'contactus.html';"> Contact Us </button>
+    
+</body>
+</head>
+</html>

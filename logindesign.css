@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(login.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition:0.5s;
+}
+
+body.active{
+    background-image: url(login.png);
+}
+.container{
+    align-items: center;
+    position:relative;
+    width: 850px;
+    left: 150px;
+    height: 500px;
+    margin: 20px;
+    background: none;
+  
+}
+.loginbg{
+    position:absolute;
+    top:40px;
+    width: 850px;
+    height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#af2b2b;
+    box-shadow: 0 5px 45px rgb(77, 76, 76);
+}
+.loginbg .box{
+    position: relative;
+    width: 50%;
+    height: 150%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+.loginbg .box h2{
+    color:white;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: bottom 10px;
+}
+.loginbg .box button{
+    cursor: pointer;
+    padding: 10px 20px;
+    background:white;
+    color:grey;
+    font-size: 16px;
+    font-weight: 500;
+    border:none;
+}
+.formbx{
+    position:absolute;
+    top:-90px;
+    left:0;
+    width:50%;  
+    height: 140%;
+    background:white;
+    z-index: 1000;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgb(63, 61, 61);
+    transition:0.5s ease-in-out;
+    overflow: hidden;
+}
+.formbx.active{
+    left:50%;
+}
+
+.formbx .form{
+    position:absolute;
+    left:0;
+    width:100%;
+    padding: 60px;
+    transition:0.5s;
+}
+.formbx .signinform{
+    transition-delay: 0.25s;
+}
+.formbx .signinform .button{
+    background-color: #af2b2b;
+    color: whitesmoke;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 20px;
+}
+.formbx.active .signinform{
+    left:-100%;
+    transition-delay: 0s
+}
+.formbx .signupform{
+    left:100%;
+}
+.formbx.active .signupform{
+    left:0;
+}
+.formbx .form form{
+    width:100%;
+    display: flex;
+    flex-direction:column;
+}
+.formbx .form form h2{
+    font-size:30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.formbx .form form h3{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 6px;
+    font-weight: 500;
+
+}
+.formbx .form form input{
+    width: 100%;
+    margin-bottom:20px;
+    padding: 10px;
+   
+    font-size:16px;
+    border:1px solid black;
+}
+.formbx .form form input[type="button"]{
+    background:#af2b2b;
+    border:none;
+    color:whitesmoke;
+    max-width: 100px;
+    cursor:pointer;
+}
+.formbx .form form input[type="submit"]{
+    
+    background: #af2b2b;
+    border:none;
+    color:whitesmoke;
+    max-width: 100px;
+    cursor: pointer;
+}
+.formbx .form form .forgot{
+    color:black;
+    
+}
