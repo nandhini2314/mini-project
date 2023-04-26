@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill Calculator</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: url("bg.jpeg");
+            background-size: 100%;
+        }
+        .container{
+            
+            max-width: 400px;
+            margin: 130px 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bill Calculator</h1>
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <label for="discount">Enter Discount (%):</label>
+        <input type="number" id="discount" placeholder="Enter discount" />
+        <label for="tax">Enter Tax (%):</label>
+        <input type="number" id="tax" placeholder="Enter tax" />
+        <button onclick="calculateBill()">Calculate Bill</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateBill(){
+            // Get input values
+            var amount = parseFloat(document.getElementById("amount").value);
+            var discount = parseFloat(document.getElementById("discount").value);
+            var tax = parseFloat(document.getElementById("tax").value);
+
+            // Calculate actual amount
+            var discountAmount = (amount * discount) / 100;
+            var taxAmount = (amount * tax) / 100;
+            var actualAmount = amount + taxAmount - discountAmount;
+
+            // Display result
+            var resultElement = document.getElementById("result");
+            resultElement.textContent = "Actual Amount: Rs." + actualAmount.toFixed(2);
+        }
+    </script>
+</body>
+</html>
