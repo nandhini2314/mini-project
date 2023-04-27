@@ -15,15 +15,23 @@ $connection = mysqli_connect($server_name, $user_name, $password,$database);
 // Checking the  connection
 if (!$connection) {
   die("Failed ". mysqli_connect_error());
-}
+}else{
 echo "Connection established successfully." . "\n";
-
 $dishName = $_POST['dishName'];
+echo $dishName;
 $dishPrice = $_POST['dishPrice'];
-session_start();
-    $email = $_SESSION['email'];
+// session_start();
+//     $email = $_SESSION['email'];
 
-$r = "INSERT INTO `cart`() values($dishName, $dishPrice)";
+$r = "INSERT INTO `cart`(`DishName`,`DishPrice`) values('$dishName', '$dishPrice')";
+$result = mysqli_query($connection, $r);
+if($result)
+{echo "Connection established .";
+}
+else{
+    echo "not";
+}
 
+}
 
 ?>
