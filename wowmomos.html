@@ -228,7 +228,10 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        <form method="post" action="cart.php"></form>
         <div class="box">
+            <input type="hidden" name="dishName">Mixed fruit
+            <input type="hidden" name="dishPrice">95
             <img src="./Images/Dishes/raw mixed fruit.jpeg">
             <h3>Raw pressed Mixed Fruit Juice</h3>
             <div class="stars">
@@ -241,8 +244,10 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
             </div>
             <span>₹95</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+
+            <!-- <a href="#" class="btn">Add to cart</a> -->
+            <input type="submit" name="addToCart" >Add To Cart
+            </div>
         <div class="box">
             <img src="./Images/Dishes/raw mango.jpg">
             <h3>Raw pressed Mango Fruit Juice</h3>
