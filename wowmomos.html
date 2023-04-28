@@ -215,6 +215,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
     <div class="box-curry">
         <div class="box">
             <img src="./Images/Dishes/pepsi.jpg">
+            <input type="hidden" name="dishName">Pepsi
+            <input type="hidden" name="dishPrice">₹60
             <h3>Pepsi</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -228,7 +230,10 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Raw pressed Mixed Fruit Juice">
+            <input type="hidden" name="dishPrice" value="₹95">
             <img src="./Images/Dishes/raw mixed fruit.jpeg">
             <h3>Raw pressed Mixed Fruit Juice</h3>
             <div class="stars">
@@ -241,10 +246,15 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
             </div>
             <span>₹95</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+
+            <!-- <a href="#" class="btn">Add to cart</a> -->
+            <input type="submit" name="addToCart" >Add To Cart
         </div>
+        </form>
         <div class="box">
             <img src="./Images/Dishes/raw mango.jpg">
+            <input type="hidden" name="dishName">Raw pressed Mango Fruit Juice
+            <input type="hidden" name="dishPrice">₹95
             <h3>Raw pressed Mango Fruit Juice</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -260,6 +270,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
             <img src="./Images/Dishes/raw coconut water.jpg">
+            <input type="hidden" name="dishName">Raw pressed Tender Coconut
+            <input type="hidden" name="dishPrice">₹95
             <h3>Raw pressed Tender coconut </h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -286,6 +298,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
     <div class="box-roti">
         <div class="box">
             <img src="./Images/Dishes/pfm corn.jpg">
+            <input type="hidden" name="dishName">Corn Cheese Pan Fried Momos in Schezwan Sauce
+            <input type="hidden" name="dishPrice">₹99
             <h3>Corn Cheese Pan Fried Momos in Schezwan Sauce</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -301,6 +315,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
                 <img src="./Images/Dishes/pfm chicken.jpeg">
+                <input type="hidden" name="dishName">Chicken Cheese Pan Fried Momos in Schezwan Sauce
+                <input type="hidden" name="dishPrice">₹99
                 <h3>Chicken Cheese Pan Fried Momos in Schezwan Sauce</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
@@ -316,6 +332,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
             </div>
         <div class="box">
             <img src="./Images/Dishes/pfm chicken mania.jpeg">
+            <input type="hidden" name="dishName">Chicken Pan Fried Momo Mania in Schezwan Sauce
+            <input type="hidden" name="dishPrice">₹129
             <h3>Chicken Pan Fried Momo Mania in Schezwan Sauce</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -331,6 +349,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
             <img src="./Images/Dishes/pfm corn.jpg">
+            <input type="hidden" name="dishName">Veg Pan Fried Momo Mania in Schezwan Sauce
+            <input type="hidden" name="dishPrice">₹209
             <h3>Veg Pan Fried Momo Mania in Schezwan Sauce</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -346,6 +366,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
             <img src="./Images/Dishes/pfm chicken delight.jpeg">
+            <input type="hidden" name="dishName">Chicken Delight Pan Fried Momo Mania in Schezwan Sauce
+            <input type="hidden" name="dishPrice">₹239
             <h3>Chicken Delight Pan Fried Momo Mania in Schezwan Sauce</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -361,6 +383,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
             <img src="./Images/Dishes/pfm veg delight.jpeg">
+            <input type="hidden" name="dishName">Veg Delight Pan Fried Momo Mania in Schezwan Sauce
+            <input type="hidden" name="dishPrice">₹229
             <h3>Veg Delight Pan Fried Momo Mania in Schezwan Sauce</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -379,12 +403,14 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
 </section>
 
 <section class="starters" id="start">
-    <h2 class="paradise">paradise</h2>
+    <h2 class="paradise">Wow! Momos</h2>
     <hr class="line">
     <h4>Fried Momos</h4> 
     <div class="box-starters">
         <div class="box">
             <img src="./Images/Dishes/fm chicken.jpeg">
+            <input type="hidden" name="dishName">Chicken Cheese Fried Momo
+            <input type="hidden" name="dishPrice">₹129
             <h3>Chicken Cheese Fried Momo</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -400,6 +426,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
             <img src="./Images/Dishes/fm corn.jpeg">
+            <input type="hidden" name="dishName">Veg Cheese Fried Momos
+            <input type="hidden" name="dishPrice">₹109
             <h3>Veg Cheese Fried Momos</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -415,6 +443,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
             <img src="./Images/Dishes/fm chicken mania.jpeg">
+            <input type="hidden" name="dishName">Chicken Mania Fried Momos
+            <input type="hidden" name="dishPrice">₹229
             <h3>Chicken Mania Fried Momos</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -430,6 +460,8 @@ src="https://www.youtube.com/embed/SKApKob-Yo4">
         </div>
         <div class="box">
             <img src="./Images/Dishes/fm veg mania.jpeg">
+            <input type="hidden" name="dishName">Chicken Mania Fried Momos
+            <input type="hidden" name="dishPrice">₹219
             <h3>Veg Mania Fried Momos</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
