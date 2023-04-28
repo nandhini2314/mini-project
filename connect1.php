@@ -25,6 +25,8 @@ if($row = mysqli_fetch_assoc($mysqli_result))
   {
   if($User_Name == $row['Username'] and $Password == $row['Password'])
   {
+    session_start();
+    $_SESSION['username'] =  $User_Name;
     header('Location:./home2.html');
     //echo '<a href="./home2.html">Click here</a>';
   }

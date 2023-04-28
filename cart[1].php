@@ -24,12 +24,14 @@
     $conn = mysqli_connect($servername, $username, $password, $database);
     if(!$conn){
         die("Sorry we failed to connect: ". mysqli_connect_error());
-        exit;
     }
     session_start();
-        $email = $_SESSION['email'];
+        $User_Name = $_SESSION['username'];
+       // $dishName =$_SESSION['dishName'];
+        // $dishPrice=$_SESSION['dishPrice'];
+
 		//Fetch products from database
-		$result = mysqli_query($conn, "SELECT * FROM cart where email='$email'");
+		$result = mysqli_query($conn, "SELECT * FROM cart where Username='$User_Name'");
 
         echo '<div class="full-page">';
             echo ' <div class="navbar">';
@@ -55,12 +57,12 @@ if(mysqli_num_rows($result) > 0)  {
 
 while($row = mysqli_fetch_assoc($result)){
     
-    $price = $row['dishPrice'];
-    $name = $row['dishName'];
+    // $price = $row['DishPrice'];
+    // $name = $row['DishName'];
 
     echo '<div class="card">';
-        echo  '<p class="dishName" > Dish Name: '.$row['dishName'].'</p>';
-        echo  '<p class="dishPrice" > Price: '.$row['dishPrice'].'</p>';
+        echo  '<p class="dishName" > Dish Name: '.$row['DishName'].'</p>';
+        echo  '<p class="dishPrice" > Price: '.$row['DishPrice'].'</p>';
     echo '</div>';
 
 			}

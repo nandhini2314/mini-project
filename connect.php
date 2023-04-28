@@ -17,8 +17,6 @@ if (!$connection) {
   die("Failed ". mysqli_connect_error());
 }
 echo "Connection established successfully." . "\n";
-
-
 $Full_Name =  $_REQUEST['fname'];
 $Username = $_REQUEST['uname'];
 $Age =  $_REQUEST['age'];
@@ -41,4 +39,3 @@ if(mysqli_query($connection, $sql)){
         mysqli_close($connection);
        
 ?>
-
