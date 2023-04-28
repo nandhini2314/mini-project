@@ -87,7 +87,7 @@
         <li><a href="#start" onclick="myfunction()">Starters</a></li>
         <li><a href="#roti" onclick="myroti()">Rotis</a></li>
         <li><a href="#curry" onclick="mycurry()">Main Course</a></li>
-        <li><a href="#fast" onclick="myfastfood()">Fast food</a></li>
+        <li><a href="#fast" onclick="myfastfood()">Chinese</a></li>
     </ul>
 </div>
 </nav>
@@ -97,7 +97,7 @@
     <h2><img src="C:\Users\STUDENT\Downloads\pkhb.png" height="150" width ="600"></h2>
     <div class="cont">
         <iframe width="420" height="315"
-<iframe  width="560" height="315" src="https://www.youtube.com/embed/mFZkmjC2B3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+       width="560" height="315" src="https://www.youtube.com/embed/mFZkmjC2B3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
 </iframe>
         </div>
         </div>
@@ -105,9 +105,12 @@
 <section class="fastfood" id="fast">
     <h2 class="fastfood1">Pride Kitchen Hyderabadi Biryani</h2>
     <hr class="line">
-    <h4>Fast Food</h4>
+    <h4>Chinese</h4>
     <div class="box-fast-food">
+        <form method="post" action="cartinsert.php">
         <div class="box">
+        <input type="hidden" name="dishName" value="Chicken Fried Rice">
+        <input type="hidden" name="dishPrice" value="₹180">
             <img src="./Images/Dishes/chicken-fried-rice.jpg">
             <h3>Chicken Fried Rice</h3>
             <div class="stars">
@@ -121,9 +124,12 @@
             <span>₹180</span>
             <br>
             <a href="#" class="btn">Add to cart</a>
-            
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Veg Fried Rice">
+            <input type="hidden" name="dishPrice" value="₹110">
             <img src="./Images/Dishes/veg-fried rice.jpg">
             <h3>Veg-Fried Rice</h3>
             <div class="stars">
@@ -139,7 +145,11 @@
             <a href="#" class="btn">Add to cart</a>
             
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Veg Manchuria">
+        <input type="hidden" name="dishPrice" value="₹120">
             <img src="./Images/Dishes/veg-manchuria.jpg">
             <h3>Veg-Manchuria</h3>
             <div class="stars">
@@ -155,6 +165,10 @@
             <a href="#" class="btn">Add to cart</a>
             
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
+        <input type="hidden" name="dishName" value="Chicken Manchuria">
+        <input type="hidden" name="dishPrice" value="₹250">
         <div class="box">
             <img src="./Images/Dishes/chicken-manchuria.jpg">
             <h3>Chicken Manchuria</h3>
@@ -171,7 +185,11 @@
             <a href="#" class="btn">Add to cart</a>
             
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Paneer Fried Rice">
+        <input type="hidden" name="dishPrice" value="₹160">
             <img src="./Images/Dishes/paneer-fried rice.jpg">
             <h3>Paneer Fried Rice</h3>
             <div class="stars">
@@ -187,7 +205,11 @@
             <a href="#" class="btn">Add to cart</a>
             
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Egg Fried Rice">
+        <input type="hidden" name="dishPrice" value="₹150">
             <img src="./Images/Dishes/egg-fried-rice.jpg">
             <h3>Egg Fried Rice</h3>
             <div class="stars">
@@ -203,6 +225,7 @@
             <a href="#" class="btn">Add to cart</a>
             
         </div>
+        </form>
     </div>
 </section>
 
@@ -212,6 +235,9 @@
     <hr class="line">
     <h4>Main Course</h4> 
     <div class="box-curry">
+        <input type="hidden" name="dishName" value="Butter Chicken">
+        <input type="hidden" name="dishPrice" value="₹250">
+        <form method="post" action="cartinsert.php">
         <div class="box">
             <img src="./Images/Dishes/butter-chicken.jpg">
             <h3>Butter-chicken</h3>
@@ -227,7 +253,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Kadai Chicken">
+        <input type="hidden" name="dishPrice" value="₹250">
             <img src="./Images/Dishes/Kadai-Chicken.jpg">
             <h3>Kadai Chicken</h3>
             <div class="stars">
@@ -242,7 +272,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Mutton Masala">
+        <input type="hidden" name="dishPrice" value="₹300">
             <img src="./Images/Dishes/mutton-masala.jpg">
             <h3>Mutton Masala</h3>
             <div class="stars">
@@ -257,7 +291,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Paneer Butter Masala">
+        <input type="hidden" name="dishPrice" value="₹220">
             <img src="./Images/Dishes/panner-butter-masala.jpg">
             <h3>Panner Butter Masala</h3>
             <div class="stars">
@@ -272,7 +310,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chicken Tikka Masala">
+        <input type="hidden" name="dishPrice" value="₹240">
             <img src="./Images/Dishes/chicken-tikka-masala.jpg">
             <h3>Chicken Tikka Masala</h3>
             <div class="stars">
@@ -287,8 +329,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
-
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Mutton Keema">
+        <input type="hidden" name="dishPrice" value="₹240">
             <img src="./Images/Dishes/mutton-keema.jpg">
             <h3>Mutton Kheema</h3>
             <div class="stars">
@@ -303,6 +348,7 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
 
         </div>
 
@@ -312,7 +358,10 @@
     <hr class="line">
     <h4>Roti's</h4> 
     <div class="box-roti">
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Butter Naan">
+        <input type="hidden" name="dishPrice" value="₹40">
             <img src="./Images/Dishes/butter-naan.jpg">
             <h3>Butter-Naan</h3>
             <div class="stars">
@@ -327,7 +376,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+    </form>
+    <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Tandoori Roti">
+        <input type="hidden" name="dishPrice" value="₹35">
             <img src="./Images/Dishes/tandoori-roti.jpg">
             <h3>Tandoori Roti</h3>
             <div class="stars">
@@ -342,7 +395,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chapathi">
+        <input type="hidden" name="dishPrice" value="₹20">
             <img src="./Images/Dishes/chapathi.jpg">
             <h3>Chapathi</h3>
             <div class="stars">
@@ -357,7 +414,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Garlic Naan">
+        <input type="hidden" name="dishPrice" value="₹35">
             <img src="./Images/Dishes/garlicnaan.jpg">
             <h3>Garlic Naan</h3>
             <div class="stars">
@@ -372,7 +433,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Plain Naan">
+        <input type="hidden" name="dishPrice" value="₹25">
             <img src="./Images/Dishes/plain-naan.jpg">
             <h3>Plain-Naan</h3>
             <div class="stars">
@@ -387,8 +452,13 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Butter Roti">
+        <input type="hidden" name="dishPrice" value="₹20">
             <img src="./Images/Dishes/butter-roti.jpg">
+
             <h3>Butter-Roti</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -402,6 +472,8 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        </div>
 
 </section>
 
@@ -410,7 +482,10 @@
     <hr class="line">
     <h4>Starters</h4> 
     <div class="box-starters">
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chicken Manchurian Full">
+        <input type="hidden" name="dishPrice" value="₹350">
             <img src="./Images/Dishes/chicken-manchuria.jpg">
             <h3>Chicken Manchurian Full</h3>
             <div class="stars">
@@ -425,7 +500,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chicken Fry">
+        <input type="hidden" name="dishPrice" value="₹359">
             <img src="./Images/Dishes/chicken-fry.jpg">
             <h3>Chicken Fry</h3>
             <div class="stars">
@@ -440,7 +519,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chicken Lollipop">
+        <input type="hidden" name="dishPrice" value="₹220">
             <img src="./Images/Dishes/chicken-lollipop.jpg">
             <h3>Chicken lollipop</h3>
             <div class="stars">
@@ -455,7 +538,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chicken Wings">
+        <input type="hidden" name="dishPrice" value="₹210">
             <img src="./Images/Dishes/chicken-wings.jpg">
             <h3>Chicken Wings</h3>
             <div class="stars">
@@ -470,9 +557,13 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
-
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chicken 65">
+        <input type="hidden" name="dishPrice" value="₹210">
             <img src="./Images/Dishes/chicken-65.jpg">
+
             <h3>Chicken-65</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -486,7 +577,11 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
+        <form method="post" action="cartinsert.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Paneer Tikka">
+        <input type="hidden" name="dishPrice" value="₹210">
             <img src="./Images/Dishes/panner-tikka.jpg">
             <h3>Panner Tikka</h3>
             <div class="stars">
@@ -501,6 +596,7 @@
             <br>
             <a href="#" class="btn">Add to cart</a>
         </div>
+        </form>
     </div>
 
 </section>
@@ -510,7 +606,10 @@
     <hr class="line">
     <h4>Biryani's</h4>  
     <div class="box-container">
+    <form method="post" action="cartinsert.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Chicken Dum Biryani">
+        <input type="hidden" name="dishPrice" value="₹250">
         <img src="./Images/Dishes/Chicken-Biryani.jpg">
         <h3>Chicken Dum Biryani</h3>
         <div class="stars">
@@ -521,11 +620,15 @@
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹120</span>
+        <span>₹250</span>
         <br>
         <a href="#" class="btn">Add to cart</a>
     </div>
+    </form>
+    <form method="post" action="cartinsert.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Mutton Dum Biryani">
+        <input type="hidden" name="dishPrice" value="₹320">
         <img src="./Images/Dishes/mutton biryani.jpeg">
         <h3>Mutton Dum Biryani</h3>
         <div class="stars">
@@ -540,7 +643,11 @@
         <br>
         <a href="#" class="btn">Add to cart</a>
     </div>
+    </form>
+    <form method="post" action="cartinsert.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Egg Dum Biryani">
+        <input type="hidden" name="dishPrice" value="₹150">
         <img src="./Images/Dishes/egg biryani.jpg">
         <h3>Egg Dum Biryani</h3>
         <div class="stars">
@@ -550,12 +657,15 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹90</span>
+        <span>₹150</span>
         <br>
         <a href="#" class="btn">Add to cart</a>
-
     </div>
+    </form>
+    <form method="post" action="cartinsert.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Veg Dum Biryani">
+        <input type="hidden" name="dishPrice" value="₹140">
         <img src="./Images/Dishes/vegpulao.jpg" >
         <h3>Veg Dum Biryani</h3>
         <div class="stars">
@@ -570,7 +680,11 @@
         <a href="#" class="btn">Add to cart</a>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Hyderabadi Kachi Chicken Biryani">
+        <input type="hidden" name="dishPrice" value="₹140">
         <img src="./Images/Dishes/kachi chicken biryani.jpg">
         <h3>Hyderabadi Kachi Chicken Biryani</h3>
         <div class="stars">
@@ -585,7 +699,11 @@
         <a href="#" class="btn">Add to cart</a>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Paneer Biryani">
+        <input type="hidden" name="dishPrice" value="₹180">
         <img src="./Images/Dishes/paneer biryani.jpg">
         <h3>Paneer Biryani</h3>
         <div class="stars">
@@ -595,14 +713,13 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹110</span>
+        <span>₹180</span>
         <br>
         <a href="#" class="btn">Add to cart</a>
 
     </div>
+    </form>
 
-
-    </div>
     </div>
 </section>
 <div id="about" class="about">
@@ -650,7 +767,7 @@
             </div>
             
             <div class="footer-col">
-                <h4>Foodies</h4>
+                <h4>JustEatFood</h4>
                 <ul>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">Our services</a></li>
