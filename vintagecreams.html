@@ -15,7 +15,7 @@
     <header>
         <a href="#" class="logo"><i class="fa fa-utensils"></i>JustEatFood</a>
         <nav class="navbar">
-            <a class="active" href="./home.html">Home</a>
+            <a class="active" href="./home2.html">Home</a>
             <a href="./dishes.html">dishes</a>
              <a href="#" onclick="openAbout()">about</a>
              <a href="./contact.html" >Contact us</a>
@@ -26,7 +26,7 @@
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
             <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="./cart[1].php" class="fas fa-shopping-cart"></a>
             <i class="fa fa-user" aria-hidden="true"></i>
             <a href="login.html" class="fas fa-sign-in-alt"></a>
             
@@ -114,8 +114,11 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
     <hr class="line">
     <h4>Snacks</h4>  
     <div class="box-sandwich">
+        <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/paneer-hot-dog.jpg">
+        <input type="hidden" name="dishName" value="Paneer Hot Dog">
+            <input type="hidden" name="dishPrice" value="₹100">
         <h3>Paneer Hot Dog</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -127,10 +130,14 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹100</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/chicken-hot-dog.webp">
+        <input type="hidden" name="dishName" value="Chicken Hot Dog">
+            <input type="hidden" name="dishPrice" value="₹110">
         <h3>Chicken Hot Dog</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -142,10 +149,16 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹110</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <!--<input type="submit" name="addToCart" onclick="vintagecreams.html" >Add To <Cart-->
+
+        <button onclick="myCart()">Click me</button>
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/chicken spring roll.jpg">
+        <input type="hidden" name="dishName" value="Chicken Spring Roll">
+            <input type="hidden" name="dishPrice" value="₹120">
         <h3>Chicken Spring Roll</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -156,12 +169,16 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹120</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/sandwich bread.jpg">
-        <h3>Sandwich Bread</h3>hh3>
+        <input type="hidden" name="dishName" value="Sandwich Bread">
+            <input type="hidden" name="dishPrice" value="₹50">
+        <h3>Sandwich Bread</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -171,11 +188,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹50</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/veghotdog.jpg">
+        <input type="hidden" name="dishName" value="Veg Hot Dog">
+            <input type="hidden" name="dishPrice" value="₹95">
         <h3>Veg Hot Dog </h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -186,10 +207,10 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹95</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
-    
+    </form>
     
 </section>
 <section class="burg" id="burger">
@@ -197,8 +218,11 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
     <hr class="line">
     <h4>Snacks</h4>  
     <div class="box-burger">
+        <form method="post" action="cartinsert13.php">
         <div class="box">
             <img src="./Images/Dishes/mini-chicken-burger.jpg">
+            <input type="hidden" name="dishName" value="Mini Chicken Burger">
+            <input type="hidden" name="dishPrice" value="₹99">
             <h3>Mini Chicken Burger</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -209,12 +233,16 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
             </div>
             <span>₹99</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+            <button onclick="myCart()">Click me</button>
     
         </div>
+        </form>
+        <form method="post" action="cartinsert13.php">
     
     <div class="box">
         <img src="./Images/Dishes/paneer-tikka-burger.JPG">
+        <input type="hidden" name="dishName" value="Paneer Tikka Burger">
+            <input type="hidden" name="dishPrice" value="₹130">
         <h3>Paneer Tikka Burger</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -225,11 +253,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹130</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/chicken burger.jpg">
+        <input type="hidden" name="dishName" value="Chicken Burger">
+            <input type="hidden" name="dishPrice" value="₹120">
         <h3>Chicken Burger</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -240,13 +272,17 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹120</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     
     
     <div class="box">
         <img src="./Images/Dishes/veg-burger.jpg">
+        <input type="hidden" name="dishName" value="Veg burger">
+            <input type="hidden" name="dishPrice" value="₹90">
         <h3>Veg burger</h3>hh3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -257,10 +293,14 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹90</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/chicken tika burger.jpg">
+        <input type="hidden" name="dishName" value="Chicken Tikka Burger">
+            <input type="hidden" name="dishPrice" value="₹150">
         <h3>Chicken Tikka Burger</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -271,10 +311,10 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹150</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
-    
+    </form>
     
 </section>
 <section class="past" id="pastry">
@@ -282,8 +322,11 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
     <hr class="line">
     <h4>Pastry's</h4>  
     <div class="box-pastry">
+        <form method="post" action="cartinsert1313.php">
     <div class="box">
         <img src="./Images/Dishes/red-velvet pastry.jpg">
+        <<input type="hidden" name="dishName" value="Red Velvet Pastry">
+        <input type="hidden" name="dishPrice" value="₹140">
         <h3>Red Velvet Pastry</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -295,10 +338,14 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹140</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
+    </form>
+    <form method="post" action="cartinsert1313.php">
     <div class="box">
         <img src="./Images/Dishes/pineapple pastry.jpg">
+        <input type="hidden" name="dishName" value="ButterScotch Pastry">
+            <input type="hidden" name="dishPrice" value="₹120">
         <h3>ButterScotch Pastry</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -309,12 +356,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹120</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
-   
+   </form>
+   <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/almond delight pastry.webp">
+        <input type="hidden" name="dishName" value="Almond Delight">
+        <input type="hidden" name="dishPrice" value="₹109">
         <h3>Almond Delight</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -325,11 +375,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹109</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/blackforest pastry.jpg">
+        <input type="hidden" name="dishName" value="Black Forest Pastry">
+            <input type="hidden" name="dishPrice" value="₹100">
         <h3>Black Forest Pastry</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -341,11 +395,14 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹100</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
-    
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/butterscotch pastry.jpg">
+        <input type="hidden" name="dishName" value="Pineapple pastry">
+            <input type="hidden" name="dishPrice" value="₹"79>
         <h3>Pineapple pastry</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -354,13 +411,17 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹73</span>
+        <span>₹79</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/dry fruit pastry.jpg">
+        <input type="hidden" name="dishName" value="Dry Fruit pastry">
+            <input type="hidden" name="dishPrice" value="₹109">
         <h3>Dry Fruit pastry</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -371,12 +432,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹109</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
-   
+   </form>
+   <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/lyche pastry.png">
+        <input type="hidden" name="dishName" value="Lyche pastry">
+            <input type="hidden" name="dishPrice" value="₹109">
         <h3>Lyche pastry</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -387,19 +451,22 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹109</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
     </div>
-    
+    </form>
 </section>
 <section class="meh" id="cakes">
     <h2 class="ks">Vintage Creams</h2>
     <hr class="line">
     <h4>Cakes</h4>  
     <div class="box-container">
+        <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/pineapple.jpg">
+        <input type="hidden" name="dishName" value="Pineapple Cake">
+            <input type="hidden" name="dishPrice" value="₹640">
         <h3>Pineapple Cake</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -411,11 +478,14 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹640</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
-    
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/blackforest.jpg">
+        <input type="hidden" name="dishName" value="Black Forest">
+            <input type="hidden" name="dishPrice" value="₹600">
         <h3>Black Forest</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -426,11 +496,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹600</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/almond delight.jpg">
+        <input type="hidden" name="dishName" value="Almond Delight Cake">
+            <input type="hidden" name="dishPrice" value="₹980">
         <h3>Almond Delight Cake</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -442,11 +516,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹980</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/butter-scotch.jpg">
-        <h3>ButterScotch cake 1kg</h3>
+        <input type="hidden" name="dishName" value="ButterScotch cake">
+            <input type="hidden" name="dishPrice" value="₹660">
+        <h3>ButterScotch cake</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -456,11 +534,15 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹660</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
     </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/choco tuffle cake.jpg">
+        <input type="hidden" name="dishName" value="Choco Truffle Cake">
+            <input type="hidden" name="dishPrice" value="₹730">
         <h3>Choco Truffle Cake</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -472,11 +554,14 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹730</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
-    </div>
+    </form>
+    <form method="post" action="cartinsert13.php">
     <div class="box">
         <img src="./Images/Dishes/rasmalai cake.jpg">
+        <input type="hidden" name="dishName" value="Rasmalai Cake">
+            <input type="hidden" name="dishPrice" value="₹880">
         <h3>Rasmalai Cake</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
@@ -488,9 +573,9 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
         </div>
         <span>₹880</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
     </div>
-    
+    </form>
 </section>
 
 
@@ -523,13 +608,13 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
             <div class="footer-col">
                 <ul>
                     <i class="fa fa-utensils"></i>
-                    <span>Foodies.</span>
+                    <span>JustEatFood.</span>
                 </ul>
                 <div class="map">
                     <ul>
                         <i class="fa fa-map-marker"></i>
-                            <span>5th Floor,
-                                A-118,Sangareddy, Hyderabad, Telangana - 502001
+                            <span>KJ SOMAIYA COLLEGE OF ENGINEERING
+                                         Ghatkopar, Mumbai - 400075
                             </span>
                     </ul>
                     </div>
@@ -537,14 +622,14 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
                     <ul>
                         <i class="fas fa-inbox"></i>
                         <span>
-                            support@foodies.com
+                            support@justeatfood.com
                         </span>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-col">
-                <h4>Foodies</h4>
+                <h4>JustEatFood</h4>
                 <ul>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">Our services</a></li>
@@ -639,6 +724,9 @@ src="https://www.youtube.com/embed/jRLT_A9XWLQ">
     }
     function mypizza(){
         document.getElementById("nonpizza").style.display="block";
+    }
+    function myCart(){
+        
     }
     
         const btn = document.querySelector("button");

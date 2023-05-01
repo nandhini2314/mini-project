@@ -17,6 +17,7 @@ if (!$connection) {
   die("Failed ". mysqli_connect_error());
 }
 echo "Connection established successfully." . "\n";
+
 $User_Name = $_REQUEST["username"];
 $Password = $_REQUEST["pass"];
 $query = "SELECT * FROM `userinfo` WHERE Username = '$User_Name' and Password ='$Password'";
@@ -25,6 +26,8 @@ if($row = mysqli_fetch_assoc($mysqli_result))
   {
   if($User_Name == $row['Username'] and $Password == $row['Password'])
   {
+    session_start();
+    $_SESSION['username'] =  $User_Name;
     header('Location:./home2.html');
     //echo '<a href="./home2.html">Click here</a>';
   }
