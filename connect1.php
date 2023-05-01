@@ -17,6 +17,7 @@ if (!$connection) {
   die("Failed ". mysqli_connect_error());
 }
 echo "Connection established successfully." . "\n";
+
 $User_Name = $_REQUEST["username"];
 $Password = $_REQUEST["pass"];
 $query = "SELECT * FROM `userinfo` WHERE Username = '$User_Name' and Password ='$Password'";

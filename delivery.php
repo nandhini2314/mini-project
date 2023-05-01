@@ -15,24 +15,13 @@ $connection = mysqli_connect($server_name, $user_name, $password,$database);
 // Checking the  connection
 if (!$connection) {
   die("Failed ". mysqli_connect_error());
-}else{
+}
 echo "Connection established successfully." . "\n";
-$dishName = $_POST['dishName'];
-echo $dishName;
-$dishPrice = $_POST['dishPrice'];
+$result = mysqli_query($connection,"SELECT name_del FROM delivery ORDER BY rand() LIMIT 1");
 
-session_start();
-$User_Name= $_SESSION['username'];
 
-$r = "INSERT INTO `cart`(`Username`,`DishName`,`DishPrice`) values('$User_Name','$dishName', '$dishPrice')";
-$result = mysqli_query($connection, $r);
-if($result)
-{//echo "Connection established .";
-    header('Location:./vintagecreams.html');
-}
-else{
-    echo "not";
-}
-}
-
-?>
+mysqli_query($connection,"UPDATE delivery SET status = 'yes' where status = 'no'");
+// mysqli_query($connection,"UPDATE delivery SET status = 'no' where name = $result");
+while($row = mysqli_fetch_assoc($result)){
+    $name = $row['name_del'];
+    mysqli_query($connection,"UPDATE delivery SET status = 'no' where name_del ='$name'");}
