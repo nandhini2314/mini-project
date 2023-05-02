@@ -18,7 +18,7 @@
 	$servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "justeatfood";
+    $database = "JustEatFood";
 
     // Create a connection
     $conn = mysqli_connect($servername, $username, $password, $database);
@@ -35,12 +35,12 @@
 
         echo '<div class="full-page">';
             echo ' <div class="navbar">';
-                    echo '<h2 style="color:  #137a5e;  margin-left: 10px; font-size: 50px;">spicelane</h2>';
+                    echo '<h2 style="color:  #137a5e;  margin-left: 10px; font-size: 50px;">JustEatFood</h2>';
                         echo '<nav>';
                         echo '<ul id="MenuItems"';
-                            echo '<li><a href="index.html">Home</a></li>';
-                            echo '<li><a href="menu.html">Menu</a></li>';
-                            echo '<li><a href="reservation.html">Table Booking</a></li>';
+                            echo '<li><a href="home2.html">Home</a></li>';
+                            
+                            
                             echo '<li><a href="Cart.html">Cart</a></li>';
                             echo '<li><a href="login.html">Login</a></li>';
                             echo '<li><a href="logout.php">Logout</a></li>';
@@ -63,8 +63,8 @@ while($row = mysqli_fetch_assoc($result)){
     echo '<div class="card">';
         echo  '<p class="dishName" > Dish Name: '.$row['DishName'].'</p>';
         echo  '<p class="dishPrice" > Price: '.$row['DishPrice'].'</p>';
-        echo "<a href='./payment.html'><button'>Procced to Payment</button></a>"
-    echo '</div>';
+        echo "<a href='./payment.html'><button'>Procced to Payment</button></a>";
+        echo '</div>';
 
 			}
 
@@ -82,7 +82,7 @@ while($row = mysqli_fetch_assoc($result)){
   
         .order{
             padding: 0.6rem 1rem;
-            background-color: #137a5e;
+            background-color: whitesmoke;
             color: #ebfeee;
             text-decoration: none;
             align-items: center;
