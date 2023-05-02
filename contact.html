@@ -1,46 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact Us | Foodies</title>
-        <link rel="stylesheet" href="contact.css">
-        <link rel="icon" href="./Images/Restaurants/download.png" type="image/icon type">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    </head>
+<html lang="en" dir="ltr">
+  <head>
+   </head>
 <body>
-
-<div class="row">
-<div class="box">
-<h2><i class="fas fa-phone"></i>  Contact:9876543210</h2>
-<br>
-<h2><i class="fas fa-at"></i> Email: support@foodies.com</h2>
-<br>
-<h2><i class="fa fa-map-marker"></i>5th Floor,<br>A-118,Sangareddy, Hyderabad,<br> Telangana - 502001</h2>
-             
-</div>               
-</div>
-<div class="contact">
-<h1>Contact Us</h1>
-
-<form class="form" action="./home.html" id="form">
-<label for="uname">Name:</label>
-<input type="text" class="uname" name="name" placeholder="Enter Your Full Name">
-
-<br>
-
-  <textarea name="paragraph_text" class="formtext" cols="50" rows="10" placeholder="Enter Your Query here......"></textarea>
+    <style>
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: aliceblue;
   
-</textarea>
-<br>
-<input type="submit" class="submit" onclick="myFunction()">
-</form>
-</div>
-
-
-</body>
-
-<script>
-function myFunction() {
-    document.getElementById("form").reset();
 }
-</script>
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px;
+  background: transparent;
+  outline: none;
+  color:#001737;
+  border: solid 1px ;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+input:hover {
+  background: rgb(247, 247, 130);
+  color: #eee6df;
+}
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: rgb(247, 247, 130);
+  color: #eee6df;
+}
+
+#submit {
+  width: 502px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: solid 1px #b3aca7;
+}
+
+#submit:hover 
+{
+  color: rgb(78, 200, 78);
+}
+    </style>
+    <form id="form">
+		<h1> SEND US YOUR QUERY</h1>
+        <input id="name" type="text" placeholder="NAME" required>
+        <input id="email" type="text" placeholder="E-MAIL" required>
+        <textarea id="message" type="text" placeholder="MESSAGE" required></textarea>
+        <input type="file" id="myfile" name="myfile"> <br><br>
+        <input id="submit" type="submit" value="SUBMIT">
+        </form>
+</body>
+</html>

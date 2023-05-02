@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=
     , initial-scale=1.0">
-    <title>SpiceLane Cart</title>
+    <title>JustEatFood Cart</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
@@ -63,6 +63,7 @@ while($row = mysqli_fetch_assoc($result)){
     echo '<div class="card">';
         echo  '<p class="dishName" > Dish Name: '.$row['DishName'].'</p>';
         echo  '<p class="dishPrice" > Price: '.$row['DishPrice'].'</p>';
+        echo "<a href='./payment.html'><button'>Procced to Payment</button></a>"
     echo '</div>';
 
 			}
