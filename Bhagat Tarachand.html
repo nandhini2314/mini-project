@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehfil | Restaurant</title>
+    <title>Bhagat Tarachand|Restaurant</title>
     <link rel="icon" href="./Images/Restaurants/download.png" type="image/icon type">
 <link rel="stylesheet" href="mehfil.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -12,7 +12,7 @@
 <body>
     <!--Header section start-->
     <header>
-        <a href="#" class="logo"><i class="fa fa-utensils"></i>Foodies.</a>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>JustEatFood</a>
         <nav class="navbar">
             <a class="active" href="./home.html">Home</a>
             <a href="./dishes.html">dishes</a>
@@ -81,20 +81,20 @@
 
 <nav class="sidebar">
     <div class="text">
-    <a href="./mehfil.html"><i class="fa fa-home"></i></a>
+    <a href="./Bhagat Tarachand.html"><i class="fa fa-home"></i></a>
     <ul>
-        <li><a href="#biryani" onclick="myfun()">Biryani's</a></li>
+        <li><a href="#biryani" onclick="myfun()">Main Course</a></li>
         <li><a href="#start" onclick="myfunction()">Starter's</a></li>
         <li><a href="#roti" onclick="myroti()">Roti's</a></li>
         <li><a href="#curry" onclick="mycurry()">Curry's</a></li>
-        <li><a href="#fast" onclick="myfastfood()">Fast food</a></li>
+        <li><a href="#fast" onclick="myfastfood()">Sides and Beverages</a></li>
     </ul>
 </div>
 </nav>
 <!--Side bar ends-->
 <section class="home" id="home">
     <div class="barb">
-    <h2><img src="./Images/Restaurants/mehfil-logo.jpg" height="150"></h2>
+    <h2><img src="./Images/Restaurants/bhagat tarachand.png" height="150"></h2>
     <div class="cont">
         <iframe width="420" height="315"
 src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls=0&playlist=A_7NSIZV6Fk&loop=1">
@@ -103,13 +103,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
         </div>
 </section>
 <section class="fastfood" id="fast">
-    <h2 class="fastfood1">Mehfil</h2>
+    <h2 class="fastfood1">Bhagat Tarachand</h2>
     <hr class="line">
-    <h4>Fast Food</h4>
+    <h4>Sides and Beverages</h4>
     <div class="box-fast-food">
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/friedchicken.jpeg">
-            <h3>Chicken Fried Rice</h3>
+            <input type="hidden" name="dishName" value="Pepsi">
+            <input type="hidden" name="dishPrice" value="₹60">
+            <img src="./Images/Dishes/pepsi.jpg">
+            <h3>Pepsi</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -118,14 +121,18 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹180</span>
+            <span>₹60</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+            <button onclick="myCart()">Click me</button>
             
-        </div>
+            
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/veg-fried rice.jpg">
-            <h3>Veg-Fried Rice</h3>
+            <input type="hidden" name="dishName" value="Raw pressed Tender coconut Juice">
+            <input type="hidden" name="dishPrice" value="₹95">
+            <img src="./Images/Dishes/raw coconut water.jpg">
+            <h3>Raw pressed Tender coconut</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -134,14 +141,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹110</span>
+            <span>₹95</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+            <button onclick="myCart()">Click me</button>
             
-        </div>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/veg-manchuria.jpg">
-            <h3>Veg-Manchuria</h3>
+            <input type="hidden" name="dishName" value="Raw pressed mango Juice">
+            <input type="hidden" name="dishPrice" value="₹95">
+            <img src="./Images/Dishes/raw mango.jpg">
+            <h3>Raw pressed mango Juice</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -150,14 +160,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹120</span>
+            <span>₹95</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+            <button onclick="myCart()">Click me</button>
             
-        </div>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/chicken-manchuria.jpg">
-            <h3>Chicken Manchuria</h3>
+            <input type="hidden" name="dishName" value="Raw pressed Mixed Fruit Juice">
+            <input type="hidden" name="dishPrice" value="₹95">
+            <img src="./Images/Dishes/raw mixed fruit.jpeg">
+            <h3>Raw pressed Mixed Fruit Juice</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -166,14 +179,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹250</span>
+            <span>₹95</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+            <button onclick="myCart()">Click me</button>
             
-        </div>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/paneer-fried rice.jpg">
-            <h3>Paneer Fried Rice</h3>
+            <input type="hidden" name="dishName" value="Masala Chaas">
+            <input type="hidden" name="dishPrice" value="₹55">
+            <img src="./Images/Dishes/chaas.jpg">
+            <h3>Masala Chaas</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -182,14 +198,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹160</span>
+            <span>₹55</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+            <button onclick="myCart()">Click me</button>
             
-        </div>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/egg-fried-rice.jpg">
-            <h3>Egg Fried Rice</h3>
+            <input type="hidden" name="dishName" value="Lime Juice">
+            <input type="hidden" name="dishPrice" value="₹95">
+            <img src="./Images/Dishes/limejuc.jpg">
+            <h3>Lime Juice</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -198,23 +217,27 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹150</span>
+            <span>₹95</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
+            <button onclick="myCart()">Click me</button>
             
-        </div>
+        </div></form>
+
     </div>
 </section>
 
 <!--Curry menu-->
 <section class="currys" id="curry">
-    <h2 class="mehfil">mehfil</h2>
+    <h2 class="mehfil">Bhagat Tarachand</h2>
     <hr class="line">
     <h4>Curry's</h4> 
     <div class="box-curry">
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/butter-chicken.jpg">
-            <h3>Butter-chicken</h3>
+            <input type="hidden" name="dishName" value="Dal Tadka">
+            <input type="hidden" name="dishPrice" value="₹350">
+            <img src="./Images/Dishes/daltadka.jpg">
+            <h3>Dal Tadka</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -223,13 +246,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹250</span>
+            <span>₹350</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/Kadai-Chicken.jpg">
-            <h3>Kadai Chicken</h3>
+            <input type="hidden" name="dishName" value="Kadai Paneer">
+            <input type="hidden" name="dishPrice" value="₹295">
+            <img src="./Images/Dishes/kadai paneer.jpg">
+            <h3>Kadai Paneer</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -238,13 +264,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹250</span>
+            <span>₹295</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/mutton-masala.jpg">
-            <h3>Mutton Masala</h3>
+            <img src="./Images/Dishes/bhindi masala.jpg">
+            <input type="hidden" name="dishName" value="Bhindi Masala">
+            <input type="hidden" name="dishPrice" value="₹295">
+            <h3>Bhindi Masala</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -253,11 +282,14 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹300</span>
+            <span>₹295</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Paneer Butter Masala">
+            <input type="hidden" name="dishPrice" value="₹295">
             <img src="./Images/Dishes/panner-butter-masala.jpg">
             <h3>Panner Butter Masala</h3>
             <div class="stars">
@@ -268,13 +300,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹220</span>
+            <span>₹295</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/chicken-tikka-masala.jpg">
-            <h3>Chicken Tikka Masala</h3>
+            <input type="hidden" name="dishName" value="Paneer Tikka Masala">
+            <input type="hidden" name="dishPrice" value="₹270">
+            <img src="./Images/Dishes/paneer tikka masala.jpeg">
+            <h3>Paneer Tikka Masala</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -283,13 +318,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹240</span>
+            <span>₹270</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/Gongura chicken.jpg">
-            <h3>Gongura chicken</h3>
+            <input type="hidden" name="dishName" value="Paneer Manchurian">
+            <input type="hidden" name="dishPrice" value="₹260">
+            <img src="./Images/Dishes/paneer-manchurian.jpg">
+            <h3>Paneer Manchurian</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -298,11 +336,14 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹240</span>
+            <span>₹260</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Palak Paneer">
+            <input type="hidden" name="dishPrice" value="₹240">
             <img src="./Images/Dishes/palak paneer.jpg">
             <h3>Palak Paneer</h3>
             <div class="stars">
@@ -315,11 +356,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹240</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
             <img src="./Images/Dishes/mutton-keema.jpg">
-            <h3>Mutton Kheema</h3>
+            <h3>Dal Kheema</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -330,11 +372,14 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹240</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/gongura mutton.jpg">
-            <h3>Gongura Mutton</h3>
+            <input type="hidden" name="dishName" value="Mushroom Matar">
+            <input type="hidden" name="dishPrice" value="₹240">
+            <img src="./Images/Dishes/mushroom matar.jpg">
+            <h3>Mushroom Matar</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -345,9 +390,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹240</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Kaju Masala">
+            <input type="hidden" name="dishPrice" value="₹240">
             <img src="./Images/Dishes/kaju curry.jpg">
             <h3>Kaju Masala</h3>
             <div class="stars">
@@ -360,9 +408,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹240</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Mushroom Masala">
+            <input type="hidden" name="dishPrice" value="₹240">
             <img src="./Images/Dishes/mushroom masala.JPG">
             <h3>Mushroom masala</h3>
             <div class="stars">
@@ -375,19 +426,23 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹240</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+
 
 
         </div>
 
 </section>
 <section class="rotis" id="roti">
-    <h2 class="mehfil">Mehfil</h2>
+    <h2 class="mehfil">Bhagat Tarachand</h2>
     <hr class="line">
     <h4>Roti's</h4> 
     <div class="box-roti">
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Butter-Naan">
+            <input type="hidden" name="dishPrice" value="₹40">
             <img src="./Images/Dishes/butter-naan.jpg">
             <h3>Butter-Naan</h3>
             <div class="stars">
@@ -400,9 +455,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹40</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Roomali roti">
+            <input type="hidden" name="dishPrice" value="₹25">
                 <img src="./Images/Dishes/roomali-roti.jpg">
                 <h3>Roomali Roti</h3>
                 <div class="stars">
@@ -413,11 +471,14 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                     <i class="fas fa-star-half-alt"></i>
         
                 </div>
-                <span>₹15</span>
+                <span>₹25</span>
                 <br>
-                <a href="#" class="btn">Add to cart</a>
-            </div>
+                <button onclick="myCart()">Click me</button>
+            </div></form>
+            <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Tandoori Roti">
+            <input type="hidden" name="dishPrice" value="₹35">
             <img src="./Images/Dishes/tandoori-roti.jpg">
             <h3>Tandoori Roti</h3>
             <div class="stars">
@@ -430,9 +491,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹35</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Chapathi">
+            <input type="hidden" name="dishPrice" value="₹20">
             <img src="./Images/Dishes/chapathi.jpg">
             <h3>Chapathi</h3>
             <div class="stars">
@@ -445,9 +509,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹20</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Garlic Naan">
+            <input type="hidden" name="dishPrice" value="₹35">
             <img src="./Images/Dishes/garlicnaan.jpg">
             <h3>Garlic Naan</h3>
             <div class="stars">
@@ -460,9 +527,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹35</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Plain Naan">
+            <input type="hidden" name="dishPrice" value="₹25">
             <img src="./Images/Dishes/plain-naan.jpg">
             <h3>Plain-Naan</h3>
             <div class="stars">
@@ -475,9 +545,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹25</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Butter Roti">
+            <input type="hidden" name="dishPrice" value="₹20">
             <img src="./Images/Dishes/butter-roti.jpg">
             <h3>Butter-Roti</h3>
             <div class="stars">
@@ -490,19 +563,22 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹20</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
 
 </section>
 
 <section class="starters" id="start">
-    <h2 class="mehfil">Mehfil</h2>
+    <h2 class="mehfil">JustEatFood</h2>
     <hr class="line">
     <h4>Starters</h4> 
     <div class="box-starters">
+        <form method="post" action="cartinsert7.php">
         <div class="box">
+            <input type="hidden" name="dishName" value="Veg Manchurian">
+            <input type="hidden" name="dishPrice" value="₹250">
             <img src="./Images/Dishes/chicken-manchuria.jpg">
-            <h3>Chicken Manchurian Full</h3>
+            <h3>Veg Manchurian</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -511,13 +587,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹350</span>
+            <span>₹250</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/chicken-fry.jpg">
-            <h3>Chicken Fry</h3>
+            <input type="hidden" name="dishName" value="Paneer Fry">
+            <input type="hidden" name="dishPrice" value="₹295">
+            <img src="./Images/Dishes/paneer fry.jpg">
+            <h3>Paneer Fry</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -526,13 +605,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹359</span>
+            <span>₹295</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/chicken-lollipop.jpg">
-            <h3>Chicken lollipop</h3>
+            <input type="hidden" name="dishName" value="Paneer Chilli">
+            <input type="hidden" name="dishPrice" value="₹225">
+            <img src="./Images/Dishes/paneer chilli.jpg">
+            <h3>Paneer chilli Dry</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -543,11 +625,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹220</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/chicken-wings.jpg">
-            <h3>Chicken Wings</h3>
+            <img src="./Images/Dishes/manchurian dry.jpg">
+            <h3>Manchurian dry</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -558,11 +641,15 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹210</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/apollo fish.jpg">
-            <h3>Apollo Fish</h3>
+            <input type="hidden" name="dishName" value="Paneer Schezwan Dry">
+            <input type="hidden" name="dishPrice" value="₹210">
+            <img src="./Images/Dishes/paneer schezwan.jpg">
+            <h3>Paneer Schezwan Dry</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -573,11 +660,14 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹210</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert7.php">
         <div class="box">
-            <img src="./Images/Dishes/chicken-65.jpg">
-            <h3>Chicken-65</h3>
+            <input type="hidden" name="dishName" value="Paneer Tikka Chilli">
+            <input type="hidden" name="dishPrice" value="₹210">
+            <img src="./Images/Dishes/paneer dry tikka.jpg">
+            <h3>Paneer Tikka Chilli</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -588,39 +678,12 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹210</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert77.php">
         <div class="box">
-            <img src="./Images/Dishes/tandoori-chicken.jpg">
-            <h3>Tandoori chicken</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-    
-            </div>
-            <span>₹210</span>
-            <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
-        <div class="box">
-            <img src="./Images/Dishes/panner-tikka.jpg">
-            <h3>Panner Tikka</h3>
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-    
-            </div>
-            <span>₹210</span>
-            <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
-        <div class="box">
+            <input type="hidden" name="dishName" value="Veg Manchurian">
+            <input type="hidden" name="dishPrice" value="₹210">
             <img src="./Images/Dishes/veg-manchuria.jpg">
             <h3>Veg Manchurian</h3>
             <div class="stars">
@@ -633,35 +696,23 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             </div>
             <span>₹210</span>
             <br>
-            <a href="#" class="btn">Add to cart</a>
-        </div>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
     </div>
 
 </section>
 
 <section class="meh" id="biryani">
-    <h2 class="Mehfil">Mehfil</h2>
+    <h2 class="Mehfil">Bhagat Tarachand</h2>
     <hr class="line">
-    <h4>Biryani's</h4>  
+    <h4>Main Course</h4>  
     <div class="box-container">
+    <form method="post" action="cartinsert77.php">
     <div class="box">
-        <img src="./Images/Dishes/Chicken-Biryani.jpg">
-        <h3>Chicken Biryani</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-
-        </div>
-        <span>₹120</span>
-        <br>
-        <a href="#" class="btn">Add to cart</a>
-    </div>
-    <div class="box">
-        <img src="./Images/Dishes/ragi-sangati.jpeg">
-        <h3>Rayalaseema Ragi Sangati</h3>
+        <input type="hidden" name="dishName" value="Triple Schezwan Rice">
+        <input type="hidden" name="dishPrice" value="₹220">
+        <img src="./Images/Dishes/trip schez rice.jpg">
+        <h3>Triple Schezwan Rice</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -672,11 +723,33 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
         </div>
         <span>₹320</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
-    </div>
+        <button onclick="myCart()">Click me</button>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
-        <img src="./Images/Dishes/egg biryani.jpg">
-        <h3>Egg Biryani</h3>
+        <input type="hidden" name="dishName" value="Paneer Triple Schezwan Rice">
+        <input type="hidden" name="dishPrice" value="₹325">
+        <img src="./Images/Dishes/paneer Triple-Schezwan-Rice.jpg">
+        <h3>Paneer Triple Schezwan rice</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+        <span>₹325</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
+    <div class="box">
+
+        <input type="hidden" name="dishName" value="Paneer pulao">
+        <input type="hidden" name="dishPrice" value="₹350">
+        <img src="./Images/Dishes/paneerpulao.jpeg">
+        <h3>Paneer Pulao</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -684,14 +757,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹90</span>
+        <span>₹350</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Kashmiri pulao">
+        <input type="hidden" name="dishPrice" value="₹295">
         <img src="./Images/Dishes/mutton biryani.jpeg">
-        <h3>Mutton Biryani</h3>
+        <h3>Kashmiri Pulao</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -699,12 +775,15 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹140</span>
+        <span>₹295</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Veg Biryani">
+        <input type="hidden" name="dishPrice" value="₹295">
         <img src="./Images/Dishes/vegpulao.jpg" >
         <h3>Veg Biryani</h3>
         <div class="stars">
@@ -714,14 +793,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹140</span>
+        <span>₹295</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
-        <img src="./Images/Dishes/kachi chicken biryani.jpg">
-        <h3>Hyderabadi Kachi Chicken Biryani</h3>
+        <input type="hidden" name="dishName" value="Dal Khichdi">
+        <input type="hidden" name="dishPrice" value="₹295">
+        <img src="./Images/Dishes/dal khichdi.jpeg">
+        <h3>Dal Khichdi</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -729,29 +811,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹140</span>
+        <span>₹295</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
-        <img src="./Images/Dishes/boneless biryani.jpg">
-        <h3>Boneless Biryani Biryani</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹140</span>
-        <br>
-        <a href="#" class="btn">Add to cart</a>
-
-    </div>
-    <div class="box">
+        <input type="hidden" name="dishName" value="Vegetable Biryani">
+        <input type="hidden" name="dishPrice" value="₹395">
         <img src="./Images/Dishes/keema biryani.jpg">
-        <h3>Mutton Keema biryani Biryani</h3>
+        <h3>Vegetable Biryani</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -759,14 +829,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹140</span>
+        <span>₹395</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
-        <img src="./Images/Dishes/fishbiryani.jpg">
-        <h3>Fish Biryani</h3>
+        <input type="hidden" name="dishName" value="Palak Khichdi">
+        <input type="hidden" name="dishPrice" value="₹295">
+        <img src="./Images/Dishes/palak khichdi.jpg">
+        <h3>Palak Khichdi</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -774,14 +847,17 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹140</span>
+        <span>₹295</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
-        <img src="./Images/Dishes/prawns biryani.jpg">
-        <h3>Prawns Biryani</h3>
+        <input type="hidden" name="dishName" value="Paneer pulao">
+        <input type="hidden" name="dishPrice" value="₹350">
+        <img src="./Images/Dishes/Paneer-Pulao.jpg">
+        <h3>Paneer pulao</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -789,27 +865,15 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹140</span>
+        <span>₹350</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
-        <img src="./Images/Dishes/ulvacharu biryani.jpg">
-        <h3>Ulvacharu Chicken Biryani</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹140</span>
-        <br>
-        <a href="#" class="btn">Add to cart</a>
-
-    </div>
-    <div class="box">
+        <input type="hidden" name="dishName" value="Kaju Biryani">
+        <input type="hidden" name="dishPrice" value="₹340">
         <img src="./Images/Dishes/kachi chicken biryani.jpg">
         <h3>Kaju Biryani</h3>
         <div class="stars">
@@ -819,13 +883,16 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹140</span>
+        <span>₹340</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
 
     <div class="box">
+        <input type="hidden" name="dishName" value="Paneer biryani">
+        <input type="hidden" name="dishPrice" value="₹295">
         <img src="./Images/Dishes/paneer biryani.jpg">
         <h3>Paneer Biryani</h3>
         <div class="stars">
@@ -835,12 +902,15 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹110</span>
+        <span>₹295</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
+    <form method="post" action="cartinsert77.php">
     <div class="box">
+        <input type="hidden" name="dishName" value="Mushroom Biryani">
+        <input type="hidden" name="dishPrice" value="₹295">
         <img src="./Images/Dishes/mushroom biryani.jpg" >
         <h3>Mushroom Biryani</h3>
         <div class="stars">
@@ -850,15 +920,14 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹110</span>
+        <span>₹295</span>
         <br>
-        <a href="#" class="btn">Add to cart</a>
+        <button onclick="myCart()">Click me</button>
 
-    </div>
+    </div></form>
 
 
 
-    </div>
     </div>
 </section>
 <div id="about" class="about">
@@ -885,13 +954,13 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             <div class="footer-col">
                 <ul>
                     <i class="fa fa-utensils"></i>
-                    <span>Foodies.</span>
+                    <span>JustEatFood.</span>
                 </ul>
                 <div class="map">
                     <ul>
                         <i class="fa fa-map-marker"></i>
-                            <span>5th Floor,
-                                A-118,Sangareddy, Hyderabad, Telangana - 502001
+                            <span>KJ SOMAIYA COLLEGE OF ENGINEERING
+                                         Ghatkopar, Mumbai - 400075
                             </span>
                     </ul>
                     </div>
@@ -899,14 +968,14 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
                     <ul>
                         <i class="fas fa-inbox"></i>
                         <span>
-                            support@foodies.com
+                            support@justeatfood.com
                         </span>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-col">
-                <h4>Foodies</h4>
+                <h4>JustEatFood</h4>
                 <ul>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">Our services</a></li>
@@ -951,7 +1020,6 @@ src="https://www.youtube.com/embed/A_7NSIZV6Fk?autoplay=1&mute=1&loop=1&controls
             
 
 </footer>
-
 <!--Home  ends-->
 
 

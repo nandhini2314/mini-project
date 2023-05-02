@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cake|Factory</title>
+    <title>Baskin|robbins</title>
     <link rel="icon" href="./Images/Restaurants/download.png" type="image/icon type">
-<link rel="stylesheet" href="ksbakers.css">
+<link rel="stylesheet" href="baskin robbins.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     
     <!--Header section start-->
     <header>
-        <a href="#" class="logo"><i class="fa fa-utensils"></i>JustEatFood</a>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>  JustEatFood</a>
         <nav class="navbar">
             <a class="active" href="./home.html">Home</a>
             <a href="./dishes.html">dishes</a>
@@ -82,13 +82,15 @@
 
 <nav class="sidebar">
     <div class="text">
-    <a href="./ksbakers.html"><i class="fa fa-home"></i></a>
+    <a href="./baskin robbins.html"><i class="fa fa-home"></i></a>
     <ul>
-        <li><a href="#cakes" onclick="myfun()">Regular Cakes</a></li>
-        <li><a href="#precakes" onclick="myfunction()">Premium Cakes</a></li>
-        <li><a href="#pastry" onclick="mypastry()">Exotic Cakes</a></li>
-        <li><a href="#burger" onclick="myburger()">Sides</a></li>
-        <li><a href="#bread" onclick="mybread()">Bread</a></li>
+        <li><a href="#summer" onclick="myfun()">Summer Specials</a></li>
+        <li><a href="#precakes" onclick="myfunction()">Chocolate Flavours</a></li>
+        <li><a href="#fruit" onclick="mypastry()">Fruit Flavours</a></li>
+        <li><a href="#burger" onclick="myburger()">Sundaes</a></li>
+        <li><a href="#sandwich" onclick="mysandwich()">Take Home Happyness</a></li>
+        
+
     </ul>
 </div>
 </nav>
@@ -96,7 +98,7 @@
 
 <section class="home" id="home">
     <div class="barb">
-    <h2><img src="D:\xampp\htdocs\mini-project\Images\Restaurants\cakefactory.png" height="150"></h2>
+    <h2><img src="./Images/Restaurants/baskin robbins.png" height="150"></h2>
     <div class="cont">
         <iframe width="420" height="315"
 src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist=uBqBHsoMd08&loop=1">
@@ -104,15 +106,17 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
         </div>
         </div>
 </section>
-<section class="brd" id="bread">
-    <h2 class="ks">Cake Factory</h2>
+<section class="brd" id="summer">
+    <h2 class="ks">Baskin robbins</h2>
     <hr class="line">
-    <h4>Bread</h4>  
+    <h4>Summer Specials</h4>  
     <div class="box-bread">
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/dilkush.jpg">
-        <h3>DilKush</h3>
+        <input type="hidden" name="dishName" value="Unicorn sundae">
+        <input type="hidden" name="dishPrice" value="₹153">
+        <img src="./Images/Dishes/unicorn sundae.jpeg">
+        <h3>Unicorn Sundae</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -121,14 +125,18 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹40</span>
+        <span>₹153</span>
         <br>
         <button onclick="myCart()">Click me</button>
-    </div></form>
-    <form method="post" action="cartinsert9.php">
+        
+    </div>
+</form>
+<form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="French-Toast.jpg">
-        <h3>French toast</h3>
+        <input type="hidden" name="dishName" value="Mermaid Sundae">
+        <input type="hidden" name="dishPrice" value="₹153">
+        <img src="./Images/Dishes/mermaid sundae.webp">
+        <h3>Mermaid Sundae</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -137,14 +145,16 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹160</span>
+        <span>₹153</span>
         <br>
         <button onclick="myCart()">Click me</button>
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/creambread.jpg">
-        <h3>Cream Bread</h3>
+        <input type="hidden" name="dishName" value="Alphonso Mango Fruit cream Sundae">
+        <input type="hidden" name="dishPrice" value="₹219">
+        <img src="./Images/Dishes/alphonso mango fruit cream sundae.webp">
+        <h3>Alphonso Mango Fruit Cream Sundae</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -152,16 +162,99 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹130</span>
+        <span>₹219</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div>
+    </form>
+    <form method="post" action="cartinsert8.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Banana N Strawberry Fruit Cream Sundae">
+        <input type="hidden" name="dishPrice" value="₹219">
+        <img src="./Images/Dishes/banana n strawberry fruit cream sundae.webp">
+        <h3>Banana N Strawberry Fruit Cream Sundae</hh3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹219</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Vanilla Fruit Cream Sundae">
+        <input type="hidden" name="dishPrice" value="₹219">
+        <img src="./Images/Dishes/vanilla fruit cream sundae">
+        <h3>Vanilla Fruit Cream Sundae</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas abfa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹219</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div>
+    </form>
+    </div>
     
+</section>
+<section class="sand" id="sandwich">
+    <h2 class="ks">Baskin robbins</h2>
+    <hr class="line">
+    <h4>Take Home Happyness</h4>  
+    <div class="box-sandwich">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/toast.jpg">
-        <h3>Toast</hh3>
+        <input type="hidden" name="dishName" value="Gold Medal Ribbon Ice Cream(700ml handscooped)">
+        <input type="hidden" name="dishPrice" value="₹500">
+        <img src="./Images/Dishes/gold medal ribbon icec.webp">
+        <h3>Gold Medal Ribbon Ice Cream(700ml handscooped)</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+        <span>₹500</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+    </div></form>
+    <form method="post" action="cartinsert8.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Belgian bliss Ice cream(700ml handscooped)">
+        <input type="hidden" name="dishPrice" value="₹505">
+        <img src="./Images/Dishes/belgian bliss icec.webp">
+        <h3>Belgian Bliss Ice Cream(700ml handscooped)</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+        <span>₹505</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+    </div></form>
+    <form method="post" action="cartinsert8.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Hop scotch butterscotch ice cream(700ml handscooped)">
+        <input type="hidden" name="dishPrice" value="₹505">
+        <img src="./Images/Dishes/hop scotch butterscotch icec.webp">
+        <h3>Hop Scotch Buttterscotch Ice Cream(700ml handscooped)</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -169,15 +262,18 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹110</span>
+        <span>₹505</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
-    </div></form>
-    <form method="post" action="cartinsert9.php">
+    </div>
+    </form>
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/fruit bread.jpg">
-        <h3>Fruit Bread</h3>
+        <input type="hidden" name="dishName" value="Roasted Coffee creme ice cream(700ml handscooped)">
+        <input type="hidden" name="dishPrice" value="₹505">
+        <img src="./Images/Dishes/roasted coffee creme icec.webp">
+        <h3>Roasted Coffee Creme Ice Cream(700ml handscooped)</hh3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -185,21 +281,45 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹110</span>
+        <span>₹505</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
+
+    <form method="post" action="cartinsert8.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Vanilla ice cream(1ltr handscooped)">
+        <input type="hidden" name="dishPrice" value="₹570">
+        <img src="./Images/Dishes/vanilla icec.webp">
+        <h3>Vanilla Ice Cream(1 ltr handscooped)</hh3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹570</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div>
+    </form>
+    </div>
+    
 </section>
 <section class="burg" id="burger">
-    <h2 class="ks">Cake Factory</h2>
+    <h2 class="ks"></h2>
     <hr class="line">
-    <h4>Sides</h4>  
+    <h4>Sundaes</h4>  
     <div class="box-burger">
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/paneer-hot-dog.jpg">
-        <h3>Paneer Hot Dog</h3>
+        <input type="hidden" name="dishName" value="Vanilla affair">
+        <input type="hidden" name="dishPrice" value="₹180">
+        <img src="./Images/Dishes/vanila affair.webp">
+        <h3>Vanilla Affair</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -208,14 +328,16 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹88</span>
+        <span>₹180</span>
         <br>
         <button onclick="myCart()">Click me</button>
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/chicken-hot-dog.webp">
-        <h3>Chicken Hot Dog</h3>
+        <input type="hidden" name="dishName" value="Chocolate cheer">
+        <input type="hidden" name="dishPrice" value="₹180">
+        <img src="./Images/Dishes/chocolate dream.webp">
+        <h3>Chocolate cheer</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -224,14 +346,16 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹110</span>
+        <span>₹180</span>
         <br>
         <button onclick="myCart()">Click me</button>
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/chicken spring roll.jpg">
-        <h3>Chicken Spring Roll</h3>
+        <input type="hidden" name="dishName" value="Belgian Dream">
+        <input type="hidden" name="dishPrice" value="₹205">
+        <img src="./Images/Dishes/belgian dream.webp">
+        <h3>Belgian Dream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -239,16 +363,19 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹95</span>
+        <span>₹205</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    
+    </div>
+    </form>
+
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/mini-chicken-burger.jpg">
-        <h3>Mini Chicken Burger</hh3>
+        <input type="hidden" name="dishName" value="Bavarian Dream">
+        <input type="hidden" name="dishPrice" value="₹215">
+        <img src="./Images/Dishes/bavarian dream.webp">
+        <h3>Bavarian Dream</hh3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -256,15 +383,35 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹199</span>
+        <span>₹215</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="chicken tikka burger.jpg">
-        <h3>Chicken tikka Burger</hh3>
+        <input type="hidden" name="dishName" value="Brownie A la Mode">
+        <input type="hidden" name="dishPrice" value="₹340">
+        <img src="./Images/Dishes/brownie A la mode.webp">
+        <h3>Brownie A La Mode</hh3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹340</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert8.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Choco Lava Cake Sundae">
+        <input type="hidden" name="dishPrice" value="₹205">
+        <img src="./Images/Dishes/choco lava cake sundae.webp">
+        <h3>Choco Lava Cake Sundae(vanilla)</hh3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -277,83 +424,37 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/chicken burger.jpg">
-        <h3>Chicken Burger</hh3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹150</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-
-    <div class="box">
-        <img src="./Images/Dishes/veg-burger.jpg">
-        <h3>Veg burger</h3>hh3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹155</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/veg corn burger.jpg">
-        <h3>Corn Burger</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹116</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/veghotdog.jpg">
-        <h3>Veg Hot Dog </h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹95</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
     </div>
     
 </section>
 <section class="past" id="pastry">
-    <h2 class="ks">Cake Factory</h2>
+    <h2 class="ks">Baskins Robbins</h2>
     <hr class="line">
-    <h4>Pastry's</h4>  
+    <h4>Fruit Flavours</h4>  
     <div class="box-pastry">
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/red-velvet pastry.jpg">
-        <h3>Red Velvet Pastry</h3>
+        <input type="hidden" name="dishName" value="Shooting star">
+        <input type="hidden" name="dishPrice" value="₹99">
+        <img src="./Images/Dishes/shooting starr.webp">
+        <h3>Shooting star</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹99</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+    </div></form>
+    <form method="post" action="cartinsert8.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Rainbow sherbet">
+        <input type="hidden" name="dishPrice" value="₹73">
+        <img src="./Images/Dishes/rainboww sherbet.webp">
+        <h3>Rainbow sherbet</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -362,30 +463,16 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹155</span>
+        <span>₹73</span>
         <br>
         <button onclick="myCart()">Click me</button>
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/blackforest pastry.jpg">
-        <h3>BlackForest Pastry</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-
-        </div>
-        <span>₹95</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
+        <input type="hidden" name="dishName" value="Fresh Fruit Alphonso Mango Ice Cream">
+        <input type="hidden" name="dishPrice" value="₹87">
         <img src="./Images/Dishes/almond delight pastry.webp">
-        <h3>Dutch Almond Pastry</h3>
+        <h3>Fresh Fruit Alphonso Mango Ice Cream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -393,15 +480,17 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹110</span>
+        <span>₹87</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/pineapple pastry.jpg">
-        <h3>ButterScotch pastry</hh3>
+        <input type="hidden" name="dishName" value="Fresh fruit very berry strawberry ice cream">
+        <input type="hidden" name="dishPrice" value="₹73">
+        <img src="./Images/Dishes/fresh fruit very berry strawberry icec.webp">
+        <h3>Fresh Fruit Very Berry Strawberry Ice Cream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -409,15 +498,17 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹75</span>
+        <span>₹73</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/butterscotch pastry.jpg">
-        <h3>Pineapple pastry</hh3>
+        <input type="hidden" name="dishName" value="Black currant">
+        <input type="hidden" name="dishPrice" value="₹99">
+        <img src="./Images/Dishes/black currant.webp">
+        <h3>Black currant</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -425,145 +516,25 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹85</span>
+        <span>₹99</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/dry fruit pastry.jpg">
-        <h3>DryFruit's pastry</hh3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹110</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/donut.jpg">
-        <h3>Donut</hh3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹110</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/lyche pastry.png">
-        <h3>Lychee pastry</hh3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹110</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    </div>
-    
-</section>
-<section class="choco" id="chococake">
-    <h2 class="ks">Cake Factory</h2>
-    <hr class="line">
-    <h4>Choclate cakes</h4>  
-    <div class="box-choco">
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/italian choclate cake.jpg">
-        <h3>Italian choclate cake</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-
-        </div>
-        <span>₹950</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/choco tuffle cake.jpg">
-        <h3>ChocoTruffle cake</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-
-        </div>
-        <span>₹1099</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/choco chips cake.jpg">
-        <h3>ChocoChips cake</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹1050</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    
-    <div class="box">
-        <img src="./Images/Dishes/eggless choclate cake.jpg">
-        <h3>Alpine Choclate cake </h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹1034</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-
     </div>
     
 </section>
 <section class="pre" id="precakes">
-    <h2 class="ks">Cake Factory</h2>
+    <h2 class="ks">Baskin Robbins</h2>
     <hr class="line">
-    <h4>Premium Cakes</h4>  
+    <h4>Chocolate Flavours</h4>  
     <div class="box-precake">
-        <form method="post" action="cartinsert9.php">
+        <form method="post" action="cartinsert8.php">
         <div class="box">
-            <img src="./Images/Dishes/angry bird cake.jpg">
-            <h3>Angry Bird cake</h3>
+            <input type="hidden" name="dishName" value="Billionaires chocolate ice cream ">
+            <input type="hidden" name="dishPrice" value="₹99">
+            <img src="./Images/Dishes/billionaires chocolarte icec.webp">
+            <h3>Billionaires's chocolate ice cream</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -572,14 +543,16 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
                 <i class="fas fa-star-half-alt"></i>
     
             </div>
-            <span>₹1800</span>
+            <span>₹99</span>
             <br>
             <button onclick="myCart()">Click me</button>
         </div></form>
-        <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/rasmalai cake.jpg">
-        <h3>Rasmalai cake</h3>
+        <input type="hidden" name="dishName" value="Hershey's kisses caramel icecream">
+        <input type="hidden" name="dishPrice" value="₹99">
+        <img src="./Images/Dishes/hersheys kisses caramel icec.webp">
+        <h3>Hershey's kisses caramel Ice cream </h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -588,14 +561,16 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹1500</span>
+        <span>₹99</span>
         <br>
         <button onclick="myCart()">Click me</button>
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/almond delight.jpg">
-        <h3>Almond delight cake</h3>
+        <input type="hidden" name="dishName" value="Mississippi Mud Ice Cream">
+        <input type="hidden" name="dishPrice" value="₹99">
+        <img src="./Images/Dishes/mississippi mud icec.webp">
+        <h3>Mississippi Mud Ice Cream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -604,14 +579,16 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star-half-alt"></i>
 
         </div>
-        <span>₹980</span>
+        <span>₹99</span>
         <br>
         <button onclick="myCart()">Click me</button>
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/mix-dry-fruit-cake.jpg">
-        <h3>DryFruit cake</h3>
+        <input type="hidden" name="dishName" value="Belgian Bliss Ice cream">
+        <input type="hidden" name="dishPrice" value="₹99">
+        <img src="./Images/Dishes/belgian bliss icec.webp">
+        <h3>Belgian Bliss Ice Cream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -619,31 +596,17 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹800</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/gulab-jamun-cake1.jpg" >
-        <h3>Gulab Jamun cake</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹1100</span>
+        <span>₹99</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/red-velvet cake.jpg">
-        <h3>Red velvet cake</h3>
+        <input type="hidden" name="dishName" value="Bavarian Chocolate Ice Cream">
+        <input type="hidden" name="dishPrice" value="₹99">
+        <img src="./Images/Dishes/bavarian.webp">
+        <h3>Bavarian Chocolate Ice Cream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -651,57 +614,18 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹750</span>
+        <span>₹99</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    
-    </div>
-    
-</section>
-
-<section class="meh" id="cakes">
-    <h2 class="ks">Cake Factory</h2>
-    <hr class="line">
-    <h4>Regular Cakes</h4>  
-    <div class="box-container">
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/eggless-pineapple.jpg">
-        <h3>Pineapple cake</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+        <input type="hidden" name="dishName" value="Mint Milk Chocolate Chips Ice Cream">
+        <input type="hidden" name="dishPrice" value="₹99">
 
-        </div>
-        <span>₹780</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="bc cakefactory.jpeg">
-        <h3>Butterscotch caramello cake 1kg</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-
-        </div>
-        <span>₹1600</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/blackforest.jpg">
-        <h3>BlackForest</h3>
+        <img src="./Images/Dishes/mint milk chocolate chips icec.jpeg">
+        <h3>Mint milk Chocolate Chips Ice cream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -709,15 +633,17 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹1200</span>
+        <span>₹99</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
     </div></form>
-    <form method="post" action="cartinsert9.php">
+    <form method="post" action="cartinsert8.php">
     <div class="box">
-        <img src="./Images/Dishes/eggless-buterscotch.jpg">
-        <h3>Egg-less Buterscotch 1kg</h3>
+        <input type="hidden" name="dishName" value="Dutch chocolate Ice cream">
+        <input type="hidden" name="dishPrice" value="₹87">
+        <img src="./Images/Dishes/dutch chocolate icec.webp">
+        <h3>Dutch Chocolate Ice Cream</h3>
         <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -725,39 +651,7 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
         </div>
-        <span>₹1100</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="./Images/Dishes/egg-less blackforest.JPG" >
-        <h3>Eggless Blackforest</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹900</span>
-        <br>
-        <button onclick="myCart()">Click me</button>
-
-    </div></form>
-    <form method="post" action="cartinsert9.php">
-    <div class="box">
-        <img src="cocoivory cake.jpg">
-        <h3>Choco Ivory Cake</h3>
-        <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-        </div>
-        <span>₹660</span>
+        <span>₹87</span>
         <br>
         <button onclick="myCart()">Click me</button>
 
@@ -766,7 +660,7 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
     </div>
     
 </section>
-<div class="arrow">
+
 
 <a href="#home"><i class="fas fa-arrow-up"></i></a>
 </div>
@@ -794,13 +688,13 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
             <div class="footer-col">
                 <ul>
                     <i class="fa fa-utensils"></i>
-                    <span>Foodies.</span>
+                    <span>JustEatFood.</span>
                 </ul>
                 <div class="map">
                     <ul>
                         <i class="fa fa-map-marker"></i>
-                            <span>5th Floor,
-                                A-118,Sangareddy, Hyderabad, Telangana - 502001
+                            <span>KJ SOMAIYA COLLEGE OF ENGINEERING
+                                         Ghatkopar, Mumbai - 400075
                             </span>
                     </ul>
                     </div>
@@ -808,14 +702,14 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
                     <ul>
                         <i class="fas fa-inbox"></i>
                         <span>
-                            support@foodies.com
+                            support@justeatfood.com
                         </span>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-col">
-                <h4>Foodies</h4>
+                <h4>JustEatFood</h4>
                 <ul>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">Our services</a></li>
@@ -905,7 +799,12 @@ src="https://www.youtube.com/embed/uBqBHsoMd08?autoplay=1&mute=1&loop=1&playlist
     function mybread(){
         document.getElementById("bread").style.display="block";
     }
-
+    function mysandwich(){
+        document.getElementById("sandwich").style.display="block";
+    }
+    function mypizza(){
+        document.getElementById("nonpizza").style.display="block";
+    }
     
         const btn = document.querySelector("button");
         const post = document.querySelector(".post");
