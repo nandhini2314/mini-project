@@ -28,7 +28,7 @@ $r = "INSERT INTO `cart`(`Username`,`DishName`,`DishPrice`) values('$User_Name',
 $result = mysqli_query($connection, $r);
 if($result)
 {//echo "Connection established .";
-    header('Location:./goodflippinburgers.html');
+    header('Location:./goodflipinburgers.html');
 }
 else{
     echo "not";

@@ -40,9 +40,6 @@
                         echo '<nav>';
                         echo '<ul id="MenuItems"';
                             echo '<li><a href="home2.html">Home</a></li>';
-                            
-                            
-                            echo '<li><a href="Cart.html">Cart</a></li>';
                             echo '<li><a href="login.html">Login</a></li>';
                             echo '<li><a href="logout.php">Logout</a></li>';
                         echo '</ul>';

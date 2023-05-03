@@ -18,7 +18,7 @@ if (!$connection) {
 }
 echo "Connection established successfully." . "\n";
 $Full_Name =  $_REQUEST['fname'];
-$Username = $_REQUEST['username'];
+$Username = $_REQUEST['uname'];
 $Age =  $_REQUEST['age'];
 $Email = $_REQUEST['email'];
 $Password = $_REQUEST['password'];
@@ -28,7 +28,7 @@ $Phone=$_REQUEST['phno'];
 $sql = "INSERT INTO userinfo (Full_Name,Username,Age,Email,Password,Flat_Building,Postal_Address,Phone)  VALUES ('$Full_Name','$Username','$Age','$Email','$Password','$Flat_Building','$Postal_address','$Phone')";
 if(mysqli_query($connection, $sql)){
   session_start();
-    $_SESSION['username'] =  $User_Name;
+    $_SESSION['uname'] =  $User_Name;
   //echo "<h3>data stored in a database successfully.\n Please browse your localhost php my admin\nto view the updated data</h3>";
   header('Location:./home2.html');
  // echo nl2br("\n$Full_Name\n$Username\n$Age\n$Email\n$Password\n$Flat_Building\n$Postal_address\n$City\n$State\n$Phone");
