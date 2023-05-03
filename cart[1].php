@@ -60,7 +60,7 @@ while($row = mysqli_fetch_assoc($result)){
     
     $price = $row['DishPrice'];
     // $name = $row['DishName'];
-    $cartquery = mysqli_query($conn,"SELECT SUM(CAST(substring(DishPrice,2,6) AS int)) FROM cart");
+    $cartquery = mysqli_query($conn,"SELECT SUM(CAST(substring(DishPrice,2,6) AS int)) FROM cart where Username='$User_Name'");
     //while($row1 = mysqli_fetch_assoc($cartquery));
     echo '<div class="card">';
         echo  '<p class="dishName" > Dish Name: '.$row['DishName'].'</p>';
@@ -71,6 +71,7 @@ while($row = mysqli_fetch_assoc($result)){
 
         // echo '<br><br><a class="order" href="order.html">Order Now</a>';
     while($row = mysqli_fetch_assoc($cartquery)){
+        $bill = $row['SUM(CAST(substring(DishPrice,2,6) AS int))'];
     echo '<p class="totalPrice">Total Price: '.$row['SUM(CAST(substring(DishPrice,2,6) AS int))'].'</p>';
     echo "<a href='./payment.html'><button'>Procced to Payment</button></a>";}
 }
@@ -85,7 +86,7 @@ while($row = mysqli_fetch_assoc($result)){
   
         .order{
             padding: 0.6rem 1rem;
-            background-color: whitesmoke;
+            background-color: black;
             color: #ebfeee;
             text-decoration: none;
             align-items: center;
