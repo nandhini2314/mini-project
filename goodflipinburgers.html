@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Flippin Burgers|Restaurant</title>
+    <link rel="icon" href="./Images/Restaurants/download.png" type="image/icon type">
+<link rel="stylesheet" href="hotnspicy.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!--Header section start-->
+    <header>
+        <a href="#" class="logo"><i class="fa fa-utensils"></i>  JustEatFood</a>
+        <nav class="navbar">
+            <a class="active" href="./home.html">Home</a>
+            <a href="./dishes.html">dishes</a>
+            <a href="#" onclick="openAbout()">about</a>
+            <a href="./contact.html" >Contact us</a>
+            <a class="feed" id="feedback">feedback</a>
+            <a href="#">Orders</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <a href="login.html" class="fas fa-sign-in-alt"></a>
+            
+        </div>
+
+         <!--search form-->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close1"></i>
+    </form>
+    <!--Search Form ends-->
+    </header>
+
+<!--Rating Form starts-->
+
+<div class="back">
+    <div class="container1" id="co1">
+        <div class="post">
+            <div class="text">Thanks for Rating us!</div>
+            <div class="edit">Edit</div>
+            <i class="fas fa-times" id="close"></i>
+    
+        </div>
+        <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+            <i class="fas fa-times" id="close"></i>
+            <h4></h4>
+            <div class="textarea">
+                <textarea cols="30" placeholder="Describe your experience"></textarea>
+    
+            </div>
+            
+            <div class="btn">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+        </div>    
+    </div>
+    </div>
+<!--Rating form ends-->
+<!--side bar-->
+
+<nav class="sidebar">
+    <div class="text">
+    <a href="./hitech.html"><i class="fa fa-home"></i></a>
+    <ul>
+        <li><a href="#biryani" onclick="myfun()">Burgers</a></li>
+        <li><a href="#start" onclick="myfunction()">Hot dogs</a></li>
+        <li><a href="#roti" onclick="myroti()">Good Flippin Deals</a></li>
+        <li><a href="#soup" onclick="mycurry()">Sides</a></li>
+        <li><a href="#fast" onclick="myfastfood()">Drinks</a></li>
+        
+    </ul>
+</div>
+</nav>
+<!--Side bar ends-->
+<section class="home" id="home">
+    <div class="barb">
+    <h2><img src="./Images/Restaurants/gfb.png" height="150"></h2>
+    <div class="cont">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L1E1S_6zhp8?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+</section>
+<section class="fastfood" id="fast">
+    <h2 class="fastfood1">Good Flippin Burgers</h2>
+    <hr class="line">
+    <h4>Drinks</h4>
+    <div class="box-fast-food">
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Classic Strawberry Thicc Shake">
+            <input type="hidden" name="dishPrice" value="₹185">
+            <img src="./Images/Dishes/thicc strawberry.webp">
+            <h3>Classic Strawberry Thicc Shake</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹185</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+            
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Double Chocolate Thicc Shake">
+            <input type="hidden" name="dishPrice" value="₹185">
+            <img src="./Images/Dishes/thicc choco.webp">
+            <h3>Double Chocolate Thicc Shake</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹185</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+            
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Salted Caramel Thicc Shake">
+            <input type="hidden" name="dishPrice" value="₹120">
+            <img src="./Images/Dishes/salted caramek.webp">
+            <h3>Salted Caramel Thicc Shake</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹120</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+            
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Mango Thicc Shake">
+            <input type="hidden" name="dishPrice" value="₹195">
+            <img src="./Images/Dishes/mango.webp">
+            <h3>Mango Thicc Shake</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹195</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+            
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Pepsi">
+            <input type="hidden" name="dishPrice" value="₹66">
+            <img src="./Images/Dishes/pepsi.jpg">
+            <h3>Pepsi</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹66</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+            
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Lemon Iced Tea">
+            <input type="hidden" name="dishPrice" value="₹155">
+            <img src="./Images/Dishes/lemon iced tea.webp">
+            <h3>Lemon Iced Tea</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹155</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+            
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Peach Iced Tea">
+            <input type="hidden" name="dishPrice" value="155">
+            <img src="./Images/Dishes/lemon iced tea.webp">
+            <h3>Peach Iced Tea</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹155</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+    </div>
+</section>
+
+<!--Curry menu-->
+<section class="soups" id="soup">
+    <h2 class="hotnspicy">Good Flippin Burgers</h2>
+    <hr class="line">
+    <h4>Sides</h4> 
+    <div class="box-soup">
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Cheesy Fries">
+            <input type="hidden" name="dishPrice" value="₹145">
+            <img src="./Images/Dishes/cheesy fries.webp">
+            <h3>Cheesy Fries</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹145</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Peri Peri Fries">
+            <input type="hidden" name="dishPrice" value="₹145">
+            <img src="./Images/Dishes/peri peri.webp">
+            <h3>Peri Peri Fries</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹145</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Veg Nuggets">
+            <input type="hidden" name="dishPrice" value="₹245">
+            <img src="./Images/Dishes/veg nuggets.webp">
+
+            <h3>Veg Nuggets</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹245</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Potato Wedges">
+            <input type="hidden" name="dishPrice" value="₹135">
+            <img src="./Images/Dishes/potato wedges.jpeg">
+            <h3>Potato Wedges</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹135</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Peri Peri Wedges">
+            <input type="hidden" name="dishPrice" value="₹145">
+            <img src="./Images/Dishes/peri peri wedges.webp">
+            <h3>Peri Peri Wedges</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹145</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Atomic Tenders">
+            <input type="hidden" name="dishPrice" value="₹245">
+            <img src="./Images/Dishes/atomic tenders.webp">
+            <h3>Atomic Tenders</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹245</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Very Peri Hot wings">
+            <input type="hidden" name="dishPrice" value="₹295">
+            <img src="./Images/Dishes/Very peri.jpeg">
+            <h3>Very Peri Hot Wings</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹295</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="BPL Wings">
+            <input type="hidden" name="dishPrice" value="₹150">
+            <img src="./Images/Dishes/BPL wings.jpeg">
+            <h3>BPL Wings</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹150</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+
+
+        </div>
+
+</section>
+<section class="rotis" id="roti">
+    <h2 class="hitech">Good Flippin Burgers</h2>
+    <hr class="line">
+    <h4>Good Flippin Deals</h4>
+    
+    <div class="box-roti">
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="The Cluckinator + Atomic Tenders">
+            <input type="hidden" name="dishPrice" value="₹495">
+            <img src="./Images/Dishes/cluckinator.webp">
+            <h3>The Cluckinator + Atomic Tenders</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹495</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="The Cluckinator + Fries">
+            <input type="hidden" name="dishPrice" value="₹395">
+            <img src="./Images/Dishes/clcuk+fries.webp">
+            <h3>The Cluckinator+ Fries</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹395</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+            </div></form>
+            <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="The Cluckinator">
+            <input type="hidden" name="dishPrice" value="₹325">
+            <img src="./Images/Dishes/cluck.webp">
+            <h3>The Cluckinator</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹325</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="The Classy Clucker">
+            <input type="hidden" name="dishPrice" value="₹315">
+            <img src="./Images/Dishes/classy clucker.webp">
+            <h3>The Classy Clucker</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹315</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="The Kerfuffle">
+            <input type="hidden" name="dishPrice" value="₹395">
+            <img src="./Images/Dishes/kerfuffle.webp">
+            <h3>The Kerfuffle</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹395</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="The Bhoot">
+            <input type="hidden" name="dishPrice" value="₹345">
+            <img src="./Images/Dishes/bhoot.webp">
+            <h3>The Bhoot</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹345</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="T L C">
+            <input type="hidden" name="dishPrice" value="₹335">
+            <img src="./Images/Dishes/TLC.webp">
+            <h3>T L C</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹335</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+
+</section>
+<section class="starters" id="start">
+    <h2 class="hitech">Good Flippin Burgers</h2>
+    <hr class="line">
+    <h4>Hot dogs</h4> 
+    <div class="box-starters">
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Phat Dog">
+            <input type="hidden" name="dishPrice" value="₹265">
+            <img src="./Images/Dishes/phat.webp">
+            <h3>Phat Dog</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹265</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="The Underdog">
+            <input type="hidden" name="dishPrice" value="₹195">
+            <img src="./Images/Dishes/chicken-fry.jpg">
+            <h3>The Underdog</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹195</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Hot Dog(Pork)">
+            <input type="hidden" name="dishPrice" value="₹265">
+            <img src="./Images/Dishes/porl.webp">
+            <h3>Hot Dog(Pork)</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹265</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Chicken Hot dog + Fries">
+            <input type="hidden" name="dishPrice" value="₹290">
+            <img src="./Images/Dishes/hot+fries.jpeg">
+            <h3>Chicken Hot dog + Fries
+            </h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹290</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Veg Hot dog">
+            <input type="hidden" name="dishPrice" value="₹210">
+            <img src="./Images/Dishes/veg.jpeg">
+            <h3>Veg Hot Dog</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹210</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+        <form method="post" action="cartinsert12.php">
+        <div class="box">
+            <input type="hidden" name="dishName" value="Tandoor Hotdog">
+            <input type="hidden" name="dishPrice" value="₹290">
+            <img src="./Images/Dishes/tandoor.jpeg">
+            <h3>Tandoor Hot dog</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+    
+            </div>
+            <span>₹290</span>
+            <br>
+            <button onclick="myCart()">Click me</button>
+        </div></form>
+    </div>
+
+</section>
+
+<section class="meh" id="biryani">
+    <h2 class="hitech">Good Flippin Burgers</h2>
+    <hr class="line">
+    <h4>Burgers</h4>  
+    <div class="box-container">
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The Grilla">
+        <input type="hidden" name="dishPrice" value="₹345">
+        <img src="./Images/Dishes/grilla.webp">
+        <h3>The Grilla</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+        <span>₹345</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The Saucy Clucker">
+        <input type="hidden" name="dishPrice" value="₹335">
+        <img src="./Images/Dishes/saucy.webp">
+        <h3>The Saucy Clucker</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+
+        </div>
+        <span>₹335</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The Thrilla">
+        <input type="hidden" name="dishPrice" value="₹340">
+        <img src="./Images/Dishes/thrilla.webp">
+        <h3>The Thrilla</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹340</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The Cluckinator">
+        <input type="hidden" name="dishPrice" value="₹350">
+        <img src="./Images/Dishes/cluck.webp">
+        <h3>The Cluckinator</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹350</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The kerfuffle">
+        <input type="hidden" name="dishPrice" value="₹390">
+        <img src="./Images/Dishes/kerfuffle.webp" >
+        <h3>The Kerfuffle</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹390</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The Flippin Standard">
+        <input type="hidden" name="dishPrice" value="₹315">
+        <img src="./Images/Dishes/flip.webp">
+        <h3>The Flippin Standard</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹315</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Porkback Mountain">
+        <input type="hidden" name="dishPrice" value="₹385">
+        <img src="./Images/Dishes/popop.webp">
+        <h3>Porkback Mountain</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹385</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Bean Bomb">
+        <input type="hidden" name="dishPrice" value="₹295">
+        <img src="./Images/Dishes/bean bmb.webp">
+        <h3>Bean Bomb</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹295</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The Cheese Bomb">
+        <input type="hidden" name="dishPrice" value="₹295">
+        <img src="./Images/Dishes/xheese.webp">
+        <h3>The Cheese Bomb</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹295</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="The Habibi Burger">
+        <input type="hidden" name="dishPrice" value="₹295">
+        <img src="./Images/Dishes/habibi.webp">
+        <h3>The Habibi Burger</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹295</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    <form method="post" action="cartinsert12.php">
+    <div class="box">
+        <input type="hidden" name="dishName" value="Vegan seagal">
+        <input type="hidden" name="dishPrice" value="₹295">
+        <img src="./Images/Dishes/veg.webp">
+        <h3>Vegan seagal</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>₹295</span>
+        <br>
+        <button onclick="myCart()">Click me</button>
+
+    </div></form>
+    </div>
+</section>
+<div class="arrow">
+
+<a href="#home"><i class="fas fa-arrow-up"></i></a>
+</div>
+<div id="about" class="about">
+    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="about-overlay">
+        <h1>About us</h1>
+        <p>Launched in 2021, Our technology platform connects customers,<br> 
+        restaurant partners and delivery partners, serving their multiple needs. <br>
+        Customers use our platform to search and discover restaurants, read and write customer 
+        generated reviews and view and upload photos,<br> order food delivery, book a table and make 
+        payments while dining-out at restaurants. On the other hand,<br> we provide restaurant partners 
+        with industry-specific marketing tools which enable them to engage and acquire customers<br> to 
+        grow their business while also providing a reliable <br>and efficient last mile delivery service. 
+        We also operate a one-stop procurement solution, <br>Hyperpure, which supplies high quality ingredients 
+        and kitchen products to restaurant partners.<br> We also provide our delivery partners with transparent 
+        and flexible earning opportunities. </p>
+    </div>
+</div>
+<!--Footer Section-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            
+            <div class="footer-col">
+                <ul>
+                    <i class="fa fa-utensils"></i>
+                    <span>JustEatFood.</span>
+                </ul>
+                <div class="map">
+                    <ul>
+                        <i class="fa fa-map-marker"></i>
+                            <span>KJ SOMAIYA COLLEGE OF ENGINEERING
+                                         Ghatkopar, Mumbai - 400075
+                            </span>
+                    </ul>
+                    </div>
+                <div class="mail">
+                    <ul>
+                        <i class="fas fa-inbox"></i>
+                        <span>
+                            support@justeatfood.com
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>JustEatFood</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Payment policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">My orders</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment options</a></li>
+
+                </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Order Now</h4>
+                    <ul>
+                        <li><a href="#">Biryani's</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Starters</a></li>
+                        <li><a href="#">Fast food</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+            
+
+</footer>
+
+<!--Home  ends-->
+
+
+<!--Java Script-->
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+        window.onscroll=() => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('active');
+        }
+        document.querySelector('#search-icon').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector('#close1').onclick=() => {
+            document.querySelector('#search-form').classList.toggle('active');
+        }
+        document.querySelector("#feedback").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+    }
+        document.querySelector("#close").onclick=() =>{
+        document.querySelector("#co1").classList.toggle("active");
+
+    }
+    function myfun(){
+        document.getElementById("biryani").style.display="block";
+    }
+    function myfunction(){
+        document.getElementById("start").style.display="block";
+    }
+    function myroti(){
+        document.getElementById("roti").style.display="block";
+    }
+    function mycurry(){
+        document.getElementById("soup").style.display="block";
+    }
+    
+    function myfastfood(){
+        document.getElementById("fast").style.display="block";
+    }
+    function mytandoori(){
+        document.getElementById("tandoori").style.display="block";
+    }
+    
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+    
+        btn.onclick = () =>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = () =>{
+            widget.style.display = "block";
+            post.style.display = "none";
+        }
+        return false;
+    }
+     function openAbout(){
+        document.getElementById("about").style.width = "100%";
+
+    }
+    function closeNav(){
+        document.getElementById("about").style.width = "0%";
+    }
+   
+       
+    </script>
+    <!--JavaScript ends -->
+
+</body>
+</html>
