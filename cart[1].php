@@ -29,6 +29,7 @@
         $User_Name = $_SESSION['username'];
        // $dishName =$_SESSION['dishName'];
         // $dishPrice=$_SESSION['dishPrice'];
+        
 
 		//Fetch products from database
 		$result = mysqli_query($conn, "SELECT * FROM cart where Username='$User_Name'");
@@ -57,20 +58,22 @@ if(mysqli_num_rows($result) > 0)  {
 
 while($row = mysqli_fetch_assoc($result)){
     
-    // $price = $row['DishPrice'];
+    $price = $row['DishPrice'];
     // $name = $row['DishName'];
-
+    $cartquery = mysqli_query($conn,"SELECT SUM(CAST(substring(DishPrice,2,6) AS int)) FROM cart");
+    //while($row1 = mysqli_fetch_assoc($cartquery));
     echo '<div class="card">';
         echo  '<p class="dishName" > Dish Name: '.$row['DishName'].'</p>';
         echo  '<p class="dishPrice" > Price: '.$row['DishPrice'].'</p>';
-        echo "<a href='./payment.html'><button'>Procced to Payment</button></a>";
         echo '</div>';
 
 			}
 
         // echo '<br><br><a class="order" href="order.html">Order Now</a>';
-    }
-    
+    while($row = mysqli_fetch_assoc($cartquery)){
+    echo '<p class="totalPrice">Total Price: '.$row['SUM(CAST(substring(DishPrice,2,6) AS int))'].'</p>';
+    echo "<a href='./payment.html'><button'>Procced to Payment</button></a>";}
+}
 		else{
 			echo "No products found. Please Login First";
 		}  
@@ -104,6 +107,11 @@ while($row = mysqli_fetch_assoc($result)){
     .dishPrice{
         font-size: 1.5rem;
         margin: 0.5rem 1rem;
+    }
+    .totalPrice{
+        font-size: 1.5rem;
+        margin: 0.5rem 1rem;
+
     }
 
     *{
